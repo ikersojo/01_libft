@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:22:42 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:22:42 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:44:18 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:44:18 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Unlike strncat (), it takes the full size of the buffer (not just the length)
 and guarantee to NUL-terminate the result (as long as there is at least one
 byte free in dst).
 Note that a byte for the NULL should be included in size.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	size_t	i;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:16:53 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:16:53 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:19:45 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:19:45 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Allocates (with malloc(3)) and returns a new element. The variable content is
 initialized with the value of the parameter content. The variable next is
 initialized to NULL.
 If the allocation fails, the function returns NULL.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 t_list	*ft_lstnew(void const *content)
 {
 	t_list	*new;

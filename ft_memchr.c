@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.com   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:18:06 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:18:06 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:21:29 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:21:29 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ by s for the first instance of c. Both c and the bytes of the memory area
 pointed to by s are interpreted as unsigned char.
 The functions return a pointer to the matching byte or NULL if the character
 does not occur in the given memory area.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*src;

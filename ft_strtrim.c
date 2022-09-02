@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:24:40 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:24:40 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:50:39 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:50:39 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	ft_ischarset(char c, char const *set)
 Allocates (with malloc(3)) and returns a copy of the string given as argument
 without the characters in set at the beginning or at the end of the string.
 If the allocation fails the function returns NULL.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
@@ -43,7 +43,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (new == NULL)
 		return (NULL);
 	len--;
-	while (len > 0 && ft_ischarset(*(s + len), set))
+	while (len > 0 && ft_ischarset(*(s1 + len), set))
 		len--;
 	if (len == 0)
 	{
@@ -51,11 +51,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (new);
 	}
 	i = 0;
-	while (ft_ischarset(*(s + i), set))
+	while (ft_ischarset(*(s1 + i), set))
 		i++;
 	j = 0;
 	while (i <= len)
-		*(new + j++) = *(s + i++);
+		*(new + j++) = *(s1 + i++);
 	*(new + j) = '\0';
 	return (new);
 }

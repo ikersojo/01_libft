@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:22:02 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/20 16:07:53 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:43:11 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:43:41 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 Applies the function f to each character of the string passed as argument, and
 passing its index as first argument. Each character is passed by address to f
 to be modified if necessary.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	size_t	i;

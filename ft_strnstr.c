@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:24:18 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:24:18 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:49:06 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:49:06 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ If needle is an empty string, haystack is returned;
 if needle occurs nowhere in haystack, NULL is returned;
 otherwise a pointer to the first character of the first occurrence of needle is
 returned.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
 	size_t	len;
@@ -28,7 +28,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	size_t	j;
 
 	if (!(*needle))
-		return(haystack);
+		return (haystack);
 	len = ft_strlen(needle);
 	i = 0;
 	while (*(haystack + i) && (i < n))
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 			i++;
 			j++;
 		}
-		if (j = len)
+		if (j == len)
 			return (haystack + i - j);
 		i++;
 	}

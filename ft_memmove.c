@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:19:13 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:19:13 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:24:19 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:24:19 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /* DESCRIPTION:
 The memmove() function copies n bytes from src to dest. The memory areas may
-overlap: the copy of each byte is conducted ina  secuence which does not destroy
-information. It returns a pointer to dest.
------------------------------------------------------------------------------ */
+overlap: the copy of each byte is conducted in a secuence which does not
+destroy information. It returns a pointer to dest.
+---------------------------------------------------------------------------- */
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;

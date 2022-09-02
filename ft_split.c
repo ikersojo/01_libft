@@ -5,12 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:21:18 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:21:18 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:29:55 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:29:55 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_new_word(char *s, size_t i, char c)
+{
+	if ((*(s + i) != c && i == 0)
+		|| (*(s + i) != c && *(s + i - 1) == c && i != 0))
+		return (1);
+	return (0);
+}
 
 static int	ft_wc(char const *s, char c)
 {
@@ -21,19 +29,31 @@ static int	ft_wc(char const *s, char c)
 	i = 0;
 	while (*(s + i))
 	{
-		if ((*(s + i) != c && i == 0)
-			|| (*(s + i) != c && *(s + i - 1) == c && i != 0))
+		if (ft_new_word(s, i, c))
 			count++;
 		i++;
 	}
 	return (count);
 }
 
+static int	ft_word_len(char *s, size_t i, char c)
+{
+	int	len;
+
+	len = 0;
+	while (*(s + i) && ft_new_word(s, i, c))
+	{
+		len++;
+		i++;
+	}
+	return (len);
+}
+
 /* DESCRIPTION:
 Allocates (with malloc(3)) and returns an array of strings obtained by spliting
 s using the character c as a delimiter. The array must be ended by a NULL
 pointer. If the allocation fails the function returns NULL.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -48,10 +68,9 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (*(s + i))
 	{
-		if ((*(s + i) != c && i == 0)
-			|| (*(s + i) != c && *(s + i - 1) == c && i != 0))
+		if (ft_new_word(s, i, c))
 		{
-			word = (char *) malloc(ft_strlen(s) + 1);
+			word = (char *) malloc(ft_word_len(s, i, c) + 1);
 			*(array + j++) = word;
 			while (*(s + i) && *(s + i) != c)
 				*word++ = *(s + i++);
@@ -59,7 +78,7 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	**(array + j) =(char *) malloc(1);
+	**(array + j) = (char *) malloc(1);
 	**(array + j) = '\0';
 	return (array);
 }

@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/02 23:02:56 by isojo-go          #+#    #+#              #
-#    Updated: 2022/08/05 13:27:07 by isojo-go         ###   ########.fr        #
+#    Created: 2022/09/02 07:55:26 by isojo-go          #+#    #+#              #
+#    Updated: 2022/09/02 08:00:46 by isojo-go         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,9 +36,6 @@ SRC_B = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 		ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 		ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c \
 
-OBJ = 	$(SRC:.c=.o)
-
-OBJ_B =	$(SRC_B:.c=.o)
 
 # **************************************************************************** #
 
@@ -47,6 +44,9 @@ all:		$(NAME)
 $(NAME):	$(OBJ)
 			$(AR) $(NAME) $(OBJ)
 
+OBJ = 	$(SRC:.c=.o)
+
+OBJ_B =	$(SRC_B:.c=.o)
 bonus:		$(OBJ) $(OBJ_B)
 			$(AR) $(NAME) $(OBJ) $(OBJ_B)
 

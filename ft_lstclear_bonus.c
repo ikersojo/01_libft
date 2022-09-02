@@ -5,18 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:14:41 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:14:41 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:13:31 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:13:31 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* DESCRIPTION:
-Takes as a parameter a pointer to an element of a list and deletes and frees the
-memory of this element and every successors using the functions del andfree(3).
+Takes as a parameter a pointer to an element of a list, deletes and frees the
+memory of this element and every successors using the functions del and free.
 Finally the pointer to the element must be set to NULL.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*next_item;

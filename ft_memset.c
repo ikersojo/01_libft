@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:19:34 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:19:34 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:25:22 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:25:22 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 The memset() function fills the first n bytes of the memory area pointed to
 by s with the constant byte c (converted to unsigned char).
 It returns a pointer to s.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ptr;

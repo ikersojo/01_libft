@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:23:01 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:23:01 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:44:47 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:44:47 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Unlike strncpy (), it takes the full size of the buffer (not just the length)
 and guarantee to NUL-terminate the result (as long as there is at least one
 byte free in dest).
 Note that a byte for the NULL should be included in size.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {
 	size_t	i;

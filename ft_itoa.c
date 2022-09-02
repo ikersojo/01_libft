@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:13:58 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:13:58 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:11:00 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:11:00 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_abs(int n)
 	return (n);
 }
 
-static void ft_nbr(int n, char *str, size_t *i)
+static void	ft_nbr(int n, char *str, size_t *i)
 {
 	if (n < 0)
 	{
@@ -42,7 +42,7 @@ static void ft_nbr(int n, char *str, size_t *i)
 Allocate (with malloc(3)) and returns a new string (ending with ’\0’)
 representing the integer n given as argument. Negative numbers must be
 supported. If the allocation fails, the function returns NULL.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -55,7 +55,3 @@ char	*ft_itoa(int n)
 	ft_nbr(n, str, &i);
 	return (str);
 }
-
-
-
-

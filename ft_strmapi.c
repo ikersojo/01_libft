@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:23:40 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/20 16:18:34 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:46:56 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:47:12 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Applies the function f to each character of the string s passed as argument by
 giving its index as first argument to create a “fresh” new string (with malloc)
 resulting from the successive applications of f.
 If the allocation fails the function returns NULL.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;

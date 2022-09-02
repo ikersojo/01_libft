@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:18:31 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:18:31 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:22:15 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:22:15 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ be greater than the first n bytes of s2.
 For a nonzero return, the sign is determined by the sign of the difference
 between the first pair of bytes (interpreted as unsigned char) that differ in
 s1 and s2. If n is zero, the return value is zero.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*b1;

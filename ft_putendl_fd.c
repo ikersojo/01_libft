@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:20:27 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:20:27 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:27:29 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:27:29 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /* DESCRIPTION:
 Outputs the string s to the file descriptor fd followed by a ’\n’.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);

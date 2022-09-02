@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:21:48 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:21:48 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:42:43 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:42:43 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ The strdup() function allocates sufficient memory for a copy of the string s1,
 does the copy, and returns a pointer to it. The pointer may subsequently be
 used as an argument to the function free().
 If insufficient memory is available, NULL is returned.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 char	*ft_strdup(const char *s1)
 {
 	char	*dest;

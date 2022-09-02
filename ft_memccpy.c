@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/05 13:17:43 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/08/05 13:17:43 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 07:20:53 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 07:20:53 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 The memccpy() function copies no more than n bytes of src to dest, stopping
 when c is found. Returns the position in dest one byte past where c was copied,
 or null if c was not found.
------------------------------------------------------------------------------ */
+---------------------------------------------------------------------------- */
 void	*ft_memccpy(void *dest, void *src, int c, size_t n)
 {
 	unsigned char	*s;
