@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:19:45 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:19:45 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:19:45 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:19:45 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ initialized with the value of the parameter content. The variable next is
 initialized to NULL.
 If the allocation fails, the function returns NULL.
 ---------------------------------------------------------------------------- */
-t_list	*ft_lstnew(void const *content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
 

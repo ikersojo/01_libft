@@ -3,39 +3,60 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:11:00 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:11:00 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/03 17:58:58 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/03 19:37:55 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-static int	ft_abs(int n)
+static int	ft_digitcount(int n)
 {
-	if (n < 0)
-		return (n * -1);
-	return (n);
+	int	count;
+
+	count = 0;
+	while (n > 0)
+	{
+		count++;
+		n = n / 10;
+	}
+	return (count);
 }
 
-static void	ft_nbr(int n, char *str, size_t *i)
+static char	*min_int_str(void)
 {
-	if (n < 0)
+	char	*str;
+
+	str = malloc(12);
+	if (str == NULL)
+		return (NULL);
+	ft_memcpy(str, "-2147483648", 12);
+	return (str);
+}
+
+static char	*zero_str(void)
+{
+	char	*str;
+
+	str = malloc(2);
+	if (str == NULL)
+		return (NULL);
+	ft_memcpy(str, "0", 2);
+	return (str);
+}
+
+static void	ft_initialize(int *sign, int *digits, int *n)
+{
+	*sign = 0;
+	if (*n < 0)
 	{
-		*(str + *i) = '-';
-		(*i)++;
+		*sign = 1;
+		*n = *n * -1;
 	}
-	if (ft_abs(n) >= 0 && ft_abs(n) <= 9)
-	{
-		*(str + *i) = ft_abs(n) + '0';
-		(*i)++;
-	}
-	else
-	{
-		ft_putnbr(ft_abs(n / 10), str, &i);
-		ft_putnbr(ft_abs(n % 10), str, &i);
-	}
+	*digits = ft_digitcount(*n) + *sign;
 }
 
 /* DESCRIPTION:
@@ -46,12 +67,24 @@ supported. If the allocation fails, the function returns NULL.
 char	*ft_itoa(int n)
 {
 	char	*str;
-	size_t	i;
+	int		digits;
+	int		sign;
 
-	str = (char *) malloc(12);
+	if (n == -2147483648)
+		return (min_int_str());
+	if (n == 0)
+		return (zero_str());
+	ft_initialize(&sign, &digits, &n);
+	str = (char *) malloc(digits + 1);
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	ft_nbr(n, str, &i);
+	*(str + digits) = '\0';
+	while (n > 0)
+	{
+		*(str + (--digits)) = (n % 10) + '0';
+		n = n / 10;
+	}
+	if (sign == 1)
+		*(str) = '-';
 	return (str);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bouns.c                                 :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:15:15 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:15:15 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:15:15 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:15:15 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 /* DESCRIPTION:
 Iterates the list and applies the function f to the content of each element.
 ---------------------------------------------------------------------------- */
-void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*next;
-
 	if (f)
 	{
 		while (lst)
 		{
 			f(lst->content);
-			lst = next;
+			lst = lst->next;
 		}
 	}
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:21:29 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:21:29 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:21:29 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:21:29 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ pointed to by s are interpreted as unsigned char.
 The functions return a pointer to the matching byte or NULL if the character
 does not occur in the given memory area.
 ---------------------------------------------------------------------------- */
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(void *s, int c, size_t n)
 {
 	unsigned char	*src;
 	size_t			i;

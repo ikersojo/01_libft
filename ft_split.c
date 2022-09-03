@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:29:55 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:29:55 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:29:55 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:29:55 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	ft_new_word(char *s, size_t i, char c)
 	return (0);
 }
 
-static int	ft_wc(char const *s, char c)
+static int	ft_wc(char *s, char c)
 {
 	size_t	i;
 	size_t	count;
@@ -54,7 +54,7 @@ Allocates (with malloc(3)) and returns an array of strings obtained by spliting
 s using the character c as a delimiter. The array must be ended by a NULL
 pointer. If the allocation fails the function returns NULL.
 ---------------------------------------------------------------------------- */
-char	**ft_split(char const *s, char c)
+char	**ft_split(char *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 	char	*word;
 
 	array = (char **) malloc(sizeof(char *) * (ft_wc(s, c) + 1));
-	if (array == NULL || s == NULL)
+	if (array == NULL)
 		return (NULL);
 	j = 0;
 	i = 0;
@@ -78,7 +78,7 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	**(array + j) = (char *) malloc(1);
+	**(array + j) = *((char *) malloc(1));
 	**(array + j) = '\0';
 	return (array);
 }

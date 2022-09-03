@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:11:53 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:11:53 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:11:53 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:11:53 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			*lst = new;
 		else
 		{
-			tmp = ft_lstlat(*lst);
+			tmp = ft_lstlast(*lst);
 			tmp->next = new;
 		}
 	}

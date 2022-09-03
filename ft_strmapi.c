@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:46:56 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:47:12 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:46:56 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 18:56:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ giving its index as first argument to create a “fresh” new string (with mall
 resulting from the successive applications of f.
 If the allocation fails the function returns NULL.
 ---------------------------------------------------------------------------- */
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
 	char	*new;
@@ -34,6 +34,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		*(new + i) = f(i, *(s + i));
 		i++;
 	}
-	*(new + i) == '\0';
+	*(new + i) = '\0';
 	return (new);
 }

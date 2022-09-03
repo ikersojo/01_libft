@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:22:51 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:22:51 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:22:51 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:22:51 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ The memcpy() function copies n bytes from memory area src to memory area dest,
 and returns a pointer to dest. The memory areas must not overlap. Use memmove()
 if the momery areas do overlap.
 ---------------------------------------------------------------------------- */
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;

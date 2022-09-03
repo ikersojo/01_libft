@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:42:43 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:42:43 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:42:43 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:42:43 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ does the copy, and returns a pointer to it. The pointer may subsequently be
 used as an argument to the function free().
 If insufficient memory is available, NULL is returned.
 ---------------------------------------------------------------------------- */
-char	*ft_strdup(const char *s1)
+char	*ft_strdup(char *s1)
 {
 	char	*dest;
 	size_t	i;
@@ -29,7 +29,7 @@ char	*ft_strdup(const char *s1)
 	i = 0;
 	while (*(s1 + i))
 	{
-		*(dest + i) == *(s1 + i);
+		*(dest + i) = *(s1 + i);
 		i++;
 	}
 	*(dest + i) = '\0';

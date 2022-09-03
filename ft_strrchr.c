@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:50:03 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:50:03 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:50:03 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:50:03 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ therefore if c is ‘\0’, the functions locate the terminating ‘\0’.
 The function returns a pointer to the located character, or NULL if the char
 does not appear in the string.
 ---------------------------------------------------------------------------- */
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(char *s, int c)
 {
-	size_t	i;
+	int	i;
 
-	i = ft_strlen(s) + 1;
+	i = ft_strlen(s);
 	while (i >= 0)
 	{
 		if (*(s + i) == (char)c)

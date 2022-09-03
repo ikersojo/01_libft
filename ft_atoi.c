@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 07:01:42 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 07:01:42 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/02 17:01:42 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/02 17:01:42 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ The atoi() function converts the initial portion of the string pointed to int.
 It skips any space before the numbers, accepts one single optional sign
 character (+ or -) and considers the all digits afterwards.
 ---------------------------------------------------------------------------- */
-int	ft_atoi(const char *str)
+int	ft_atoi(char *str)
 {
 	unsigned int	n;
 	int				sign;
