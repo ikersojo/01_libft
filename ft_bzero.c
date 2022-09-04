@@ -13,8 +13,9 @@
 #include "libft.h"
 
 /* DESCRIPTION:
-The bzero() function erases the data on the n bytes of memory starting at the
-location pointed to by s, writing zeros (bytes containing '\0').
+The bzero() function writes n zeroed bytes to the string s. Effectively erases
+all data by writing zeros (bytes containing '\0').
+If n is zero, bzero() does nothing.
 ---------------------------------------------------------------------------- */
 void	ft_bzero(void *s, size_t n)
 {

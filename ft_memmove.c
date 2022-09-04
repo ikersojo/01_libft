@@ -13,25 +13,25 @@
 #include "libft.h"
 
 /* DESCRIPTION:
-The memmove() function copies n bytes from src to dest. The memory areas may
-overlap: the copy of each byte is conducted in a secuence which does not
-destroy information. It returns a pointer to dest.
+The memmove() function copies "len" bytes from "src" to "dst". The two strings
+may overlap; the copy is always done in a non-destructive manner. It returns a
+pointer to dst.
 ---------------------------------------------------------------------------- */
-void	*ft_memmove(void *dest, void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*d;
 	unsigned char	*s;
 	size_t			i;
 
-	if (dest < src)
-		return (ft_memcpy(dest, src, n));
-	d = (unsigned char *)dest + (n - 1);
-	s = (unsigned char *)src + (n - 1);
+	if (dst < src)
+		return (ft_memcpy(dst, src, len));
+	d = (unsigned char *)dst + (len - 1);
+	s = (unsigned char *)src + (len - 1);
 	i = 0;
-	while (i < n)
+	while (i < len)
 	{
 		*d-- = *s--;
 		i++;
 	}
-	return (dest);
+	return (dst);
 }

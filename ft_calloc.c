@@ -13,20 +13,20 @@
 #include "libft.h"
 
 /* DESCRIPTION:
-The calloc() function allocates memory for an array of nmemb elements of size
-bytes each and returns a pointer to the allocated memory. The memory is set to
-zero. If nmemb or size is 0, then calloc() returns either NULL, or a unique
-pointer value that can later be successfully passed to free().
+The calloc() function contiguously allocates enough space for "count" objects
+that are "size" bytes of memory each and returns a pointer to the allocated
+memory. The allocated memory is filled with bytes of value zero.
+If there is an error, they return a NULL  pointer.
 ---------------------------------------------------------------------------- */
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (size == 0 || nmemb == 0)
+	if (size == 0 || count == 0)
 		return (NULL);
-	ptr = malloc(nmemb * size);
+	ptr = malloc(count * size);
 	if (ptr == NULL)
 		return (NULL);
-	ft_bzero(ptr, nmemb * size);
+	ft_bzero(ptr, count * size);
 	return (ptr);
 }

@@ -20,7 +20,7 @@ therefore if c is ‘\0’, the functions locate the terminating ‘\0’.
 The function returns a pointer to the located character, or NULL if the char
 does not appear in the string.
 ---------------------------------------------------------------------------- */
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
 
@@ -28,10 +28,10 @@ char	*ft_strchr(char *s, int c)
 	while (*(s + i))
 	{
 		if (*(s + i) == (char)c)
-			return (s + i);
+			return ((char *) s + i);
 		i++;
 	}
 	if ((char)c == '\0')
-		return (s + i);
+		return ((char *) s + i);
 	return (NULL);
 }

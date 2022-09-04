@@ -21,26 +21,22 @@ if needle occurs nowhere in haystack, NULL is returned;
 otherwise a pointer to the first character of the first occurrence of needle is
 returned.
 ---------------------------------------------------------------------------- */
-char	*ft_strnstr(char *haystack, char *needle, size_t n)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
-	size_t	len;
 	size_t	i;
 	size_t	j;
 
-	if (!(*needle))
-		return (haystack);
-	len = ft_strlen(needle);
+	if (!(*needle) || haystack == needle)
+		return ((char *) haystack);
 	i = 0;
 	while (*(haystack + i) && (i < n))
 	{
 		j = 0;
-		while (*(needle + j) && *(haystack + i) == *(needle + j) && (i < n))
-		{
-			i++;
+		while (*(haystack + i + j) && *(haystack + i + j) == *(needle + j)
+			&& (i + j < n))
 			j++;
-		}
-		if (j == len)
-			return (haystack + i - j);
+		if (!(*(needle + j)))
+			return ((char *) haystack + i);
 		i++;
 	}
 	return (NULL);

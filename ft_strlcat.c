@@ -29,7 +29,7 @@ should not happen (as it means that either size is incorrect or that dst is
 not a proper "C" string). The check exists to prevent potential security
 problems in incorrect code.
 ---------------------------------------------------------------------------- */
-size_t	ft_strlcat(char *dest, char *src, size_t n)
+size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	size_t	i;
 	size_t	res;

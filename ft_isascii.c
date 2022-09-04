@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 /* DESCRIPTION:
-isascii() checks whether c is a 7-bit unsigned char value that fits into the
-ASCII character set. The function returns zero if the character tests false and
-returns non-zero if the character tests true.
+The isascii() function tests for an ASCII character, which is any character
+between 0 and octal 0177 inclusive.The function returns zero if the character
+tests false and returns non-zero if the character tests true.
 ---------------------------------------------------------------------------- */
 int	ft_isascii(int c)
 {

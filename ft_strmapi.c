@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 17:46:56 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 18:56:26 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/04 16:37:47 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ giving its index as first argument to create a “fresh” new string (with mall
 resulting from the successive applications of f.
 If the allocation fails the function returns NULL.
 ---------------------------------------------------------------------------- */
-char	*ft_strmapi(char *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
 	char	*new;

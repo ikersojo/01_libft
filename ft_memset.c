@@ -13,21 +13,20 @@
 #include "libft.h"
 
 /* DESCRIPTION:
-The memset() function fills the first n bytes of the memory area pointed to
-by s with the constant byte c (converted to unsigned char).
-It returns a pointer to s.
+The memset() function writes "len" bytes of value "c" (converted to an unsigned
+char) to the string "b". The memset() function returns its first argument.
 ---------------------------------------------------------------------------- */
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
 	size_t			i;
 
 	i = 0;
-	ptr = (unsigned char *)s;
-	while (i < n)
+	ptr = (unsigned char *)b;
+	while (i < len)
 	{
 		*ptr++ = (unsigned char)c;
 		i++;
 	}
-	return (s);
+	return (b);
 }

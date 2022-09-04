@@ -20,7 +20,7 @@ It return an integer greater than, equal to, or less than 0, according as the
 string s1 is greater than, equal to, or less than the string s2.
 The comparison is done using unsigned characters.
 ---------------------------------------------------------------------------- */
-int	ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 

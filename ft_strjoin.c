@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 17:43:46 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 18:56:26 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/04 16:39:32 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 Allocates (with malloc(3)) and returns a new string ending with ’\0’, result of
 the concatenation of s1 and s2. If the allocation fails returns NULL.
 ---------------------------------------------------------------------------- */
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	size_t	i;
 	size_t	j;

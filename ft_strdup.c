@@ -18,7 +18,7 @@ does the copy, and returns a pointer to it. The pointer may subsequently be
 used as an argument to the function free().
 If insufficient memory is available, NULL is returned.
 ---------------------------------------------------------------------------- */
-char	*ft_strdup(char *s1)
+char	*ft_strdup(const char *s1)
 {
 	char	*dest;
 	size_t	i;
