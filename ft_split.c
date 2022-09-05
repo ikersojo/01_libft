@@ -3,57 +3,67 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:29:55 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:29:55 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/05 10:13:13 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/05 17:10:14 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_new_word(const char *s, size_t i, char c)
+static char	**ft_free_array(char **array)
 {
-	if (i == 0)
-	{
-		if ((*(s + i) != c))
-			return (1);
-	}
-	else
-	{
-		if ((*(s + i) != c && *(s + i - 1) == c))
-			return (1);
-	}
-	return (0);
+	int	i;
+
+	i = 0;
+	while (*(array + i))
+		free(*(array + i++));
+	free(array);
+	return (NULL);
 }
 
 static int	ft_wc(const char *s, char c)
 {
-	size_t	i;
-	size_t	count;
+	int	i;
+	int	count;
 
 	count = 0;
+	if (s == NULL)
+		return (0);
 	i = 0;
+	while (*(s + i) && *(s + i) == c)
+		i++;
 	while (*(s + i))
 	{
-		if (ft_new_word(s, i, c))
+		if (*(s + i) != c)
+		{
 			count++;
-		i++;
+			while (*(s + i) && *(s + i) != c)
+				i++;
+		}
+		else
+			i++;
 	}
 	return (count);
 }
 
-static int	ft_word_len(const char *s, size_t i, char c)
+static void	ft_locate_word(char **str, int *str_len, char c)
 {
-	int	len;
+	int	i;
 
-	len = 0;
-	while (*(s + i) && !ft_new_word(s, i, c))
+	*str += *str_len;
+	*str_len = 0;
+	i = 0;
+	while (**str && **str == c)
+		(*str)++;
+	while (*(*str + i))
 	{
-		len++;
+		if (*(*str + i) == c)
+			return ;
+		(*str_len)++;
 		i++;
 	}
-	return (len);
 }
 
 /* DESCRIPTION:
@@ -63,29 +73,29 @@ pointer. If the allocation fails the function returns NULL.
 ---------------------------------------------------------------------------- */
 char	**ft_split(const char *s, char c)
 {
-	size_t	i;
-	size_t	j;
 	char	**array;
-	char	*word;
+	int		i;
+	int		count;
+	char	*str;
+	int		word_len;
 
-	array = (char **) malloc(sizeof(char *) * (ft_wc(s, c) + 1));
+	if (s == NULL)
+		return (NULL);
+	count = ft_wc(s, c);
+	array = (char **) malloc(sizeof(char *) * (count + 1));
 	if (array == NULL)
 		return (NULL);
-	j = 0;
 	i = 0;
-	while (*(s + i))
+	str = (char *) s;
+	word_len = 0;
+	while (i < count)
 	{
-		if (ft_new_word(s, i, c))
-		{
-			word = (char *) malloc(ft_word_len(s, i, c) + 1);
-			*(array + j++) = word;
-			while (*(s + i) && *(s + i) != c)
-				*word++ = *(s + i++);
-			*word = '\0';
-		}
-		i++;
+		ft_locate_word(&str, &word_len, c);
+		*(array + i) = (char *) malloc((word_len + 1));
+		if (*(array + i) == NULL)
+			return (ft_free_array(array));
+		ft_strlcpy(*(array + i++), str, word_len + 1);
 	}
-	**(array + j) = *((char *) malloc(1));
-	**(array + j) = '\0';
+	*(array + i) = NULL;
 	return (array);
 }
