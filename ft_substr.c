@@ -5,25 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/04 20:15:17 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/04 20:40:34 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/05 18:42:33 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/06 17:20:39 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_maxlen(const char *s, unsigned int start, size_t len)
+char	*ft_empty_string(void)
 {
-	size_t	count;
+	char	*s;
 
-	count = 0;
-	if (start > ft_strlen(s))
-		return (0);
-	while (*(s + start++))
-		count++;
-	if (count < len)
-		return (count);
-	return (len);
+	s = (char *) malloc(1);
+	if (s == NULL)
+		return (NULL);
+	*s = '\0';
+	return (s);
 }
 
 /* DESCRIPTION:
@@ -36,17 +33,24 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	i;
-	size_t	j;
-	size_t	sub_len;
 
-	sub_len = ft_maxlen(s, start, len);
-	sub = (char *) malloc(sub_len + 1);
-	if (s == NULL || sub == NULL)
+	if (s == NULL)
 		return (NULL);
-	i = start;
-	j = 0;
-	while (*(s + i) && j < sub_len)
-		*(sub + j++) = *(s + i++);
-	*(sub + j) = '\0';
+	if (ft_strlen(s) < (size_t) start)
+		return (ft_empty_string());
+	if (ft_strlen(s) < len)
+		len = ft_strlen(s) - start;
+	sub = (char *) malloc(len + 1);
+	if (sub == NULL)
+		return (NULL);
+	s = s + start;
+	i = 0;
+	while (*s && i < len)
+	{
+		*(sub + i) = *s;
+		i++;
+		s++;
+	}
+	*(sub + i) = '\0';
 	return (sub);
 }
