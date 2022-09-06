@@ -21,17 +21,22 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*d;
 	unsigned char	*s;
-	size_t			i;
 
-	if (dst < src)
-		return (ft_memcpy(dst, src, len));
-	d = (unsigned char *)dst + (len - 1);
-	s = (unsigned char *)src + (len - 1);
-	i = 0;
-	while (i < len)
+	if (dst == NULL && src == NULL)
+		return (NULL);
+	if (dst > src)
 	{
-		*d-- = *s--;
-		i++;
+		d = (unsigned char *)dst + (len - 1);
+		s = (unsigned char *)src + (len - 1);
+		while (len-- > 0)
+			*d-- = *s--;
+	}
+	else
+	{
+		d = (unsigned char *)dst;
+		s = (unsigned char *)src;
+		while (len-- > 0)
+			*d++ = *s++;
 	}
 	return (dst);
 }

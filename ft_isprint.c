@@ -17,7 +17,7 @@ value of EOF.
 Function returns zero if the character tests false and returns non-zero if
 tests true.
 ---------------------------------------------------------------------------- */
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
