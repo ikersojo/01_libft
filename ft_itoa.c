@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:20:53 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:20:54 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*ft_itoa(int n)
 	if (n == 0)
 		return (zero_str());
 	ft_initialize(&sign, &digits, &n);
-	str = (char *) malloc(digits + 1);
+	str = (char *)malloc(digits + 1);
 	if (str == NULL)
 		return (NULL);
 	*(str + digits) = '\0';

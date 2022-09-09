@@ -27,13 +27,13 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	unsigned char	*d;
 	size_t			i;
 
-	s = (unsigned char *) src;
-	d = (unsigned char *) dest;
+	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
 	i = 0;
 	while (i < n)
 	{
 		*(d + i) = *(s + i);
-		if (*(s + i) == (unsigned char) c)
+		if (*(s + i) == (unsigned char)c)
 			return (d + i + 1);
 		i++;
 	}

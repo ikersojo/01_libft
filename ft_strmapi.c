@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:26:40 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:26:40 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 
 	if (f == NULL)
 		return (NULL);
-	new = (char *) malloc(ft_strlen(s) + 1);
+	new = (char *)malloc(ft_strlen(s) + 1);
 	if (new == NULL)
 		return (NULL);
 	i = 0;

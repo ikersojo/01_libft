@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:26:06 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:26:06 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	size_t	j;
 	char	*join;
 
-	join = (char *) malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	join = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (join == NULL)
 		return (NULL);
 	i = 0;

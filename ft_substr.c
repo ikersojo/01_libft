@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:27:47 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:27:48 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_empty_string(void)
 {
 	char	*s;
 
-	s = (char *) malloc(1);
+	s = (char *)malloc(1);
 	if (s == NULL)
 		return (NULL);
 	*s = '\0';
@@ -36,11 +36,11 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 
 	if (s == NULL)
 		return (NULL);
-	if (ft_strlen(s) < (size_t) start)
+	if (ft_strlen(s) < (size_t)start)
 		return (ft_empty_string());
 	if ((ft_strlen(s) - start) < len)
 		len = ft_strlen(s) - start;
-	sub = (char *) malloc(len + 1);
+	sub = (char *)malloc(len + 1);
 	if (sub == NULL)
 		return (NULL);
 	s = s + start;

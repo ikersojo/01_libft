@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:27:28 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:27:48 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	end = (int) ft_strlen(s1);
 	while (end > i && ft_ischarset(*(s1 + end - 1), set))
 		end--;
-	new = (char *) malloc(end - i + 1);
+	new = (char *)malloc(end - i + 1);
 	if (new == NULL)
 		return (NULL);
 	j = 0;

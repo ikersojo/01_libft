@@ -6,7 +6,7 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:25:14 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:25:14 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ char	**ft_split(const char *s, char c)
 	if (s == NULL)
 		return (NULL);
 	count = ft_wc(s, c);
-	array = (char **) malloc(sizeof(char *) * (count + 1));
+	array = (char **)malloc(sizeof(char *) * (count + 1));
 	if (array == NULL)
 		return (NULL);
 	i = 0;
@@ -91,7 +91,7 @@ char	**ft_split(const char *s, char c)
 	while (i < count)
 	{
 		ft_locate_word(&str, &word_len, c);
-		*(array + i) = (char *) malloc((word_len + 1));
+		*(array + i) = (char *)malloc((word_len + 1));
 		if (*(array + i) == NULL)
 			return (ft_free_array(array));
 		ft_strlcpy(*(array + i++), str, word_len + 1);
