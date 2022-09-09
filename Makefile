@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/09/02 17:55:26 by isojo-go          #+#    #+#              #
-#    Updated: 2022/09/02 18:56:26 by isojo-go         ###   ########.fr        #
+#    Created: 2022/09/09 15:28:36 by isojo-go          #+#    #+#              #
+#    Updated: 2022/09/09 15:28:36 by isojo-go         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CC = gcc
 CCFLAGS = -Wall -Wextra -Werror
 
 AR = ar rc
-RM = rm -f
+RM = -rm -f
 
 SRC =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_toupper.c ft_tolower.c \

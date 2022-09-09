@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:25:22 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:25:22 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:22:42 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:22:42 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 
 	i = 0;
-	ptr = (unsigned char *)b;
+	ptr = (unsigned char *) b;
 	while (i < len)
 	{
-		*ptr++ = (unsigned char)c;
+		*ptr++ = (unsigned char) c;
 		i++;
 	}
 	return (b);

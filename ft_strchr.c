@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:41:24 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:41:24 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:25:28 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:25:28 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (*(s + i))
 	{
-		if (*(s + i) == (char)c)
+		if (*(s + i) == (char) c)
 			return ((char *) s + i);
 		i++;
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:22:51 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:22:51 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:22:28 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:22:28 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	if (dst == NULL && src == NULL)
 		return (NULL);
-	d = (unsigned char *)dst;
-	s = (unsigned char *)src;
+	d = (unsigned char *) dst;
+	s = (unsigned char *) src;
 	i = 0;
 	while (i < n)
 	{

@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/03 17:58:58 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/04 16:49:36 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:20:53 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:20:54 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_digitcount(int n)
 {

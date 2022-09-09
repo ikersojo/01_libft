@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:20:53 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:20:53 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:22:09 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:22:09 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	unsigned char	*d;
 	size_t			i;
 
-	s = (unsigned char *)src;
-	d = (unsigned char *)dest;
+	s = (unsigned char *) src;
+	d = (unsigned char *) dest;
 	i = 0;
 	while (i < n)
 	{
 		*(d + i) = *(s + i);
-		if (*(s + i) == (unsigned char)c)
+		if (*(s + i) == (unsigned char) c)
 			return (d + i + 1);
 		i++;
 	}

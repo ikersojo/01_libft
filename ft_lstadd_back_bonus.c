@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com   +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:11:53 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:11:53 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:21:03 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:21:03 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 17:22:15 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/02 17:22:15 by isojo-go         ###   ########.fr       */
+/*   Created: 2022/09/09 15:22:20 by isojo-go          #+#    #+#             */
+/*   Updated: 2022/09/09 15:22:20 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	if (n == 0)
 		return (0);
-	b1 = (unsigned char *)s1;
-	b2 = (unsigned char *)s2;
+	b1 = (unsigned char *) s1;
+	b2 = (unsigned char *) s2;
 	i = 0;
 	while ((i < n - 1) && (*(b1 + i) == *(b2 + i)))
 		i++;
