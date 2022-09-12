@@ -6,13 +6,13 @@
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:27:47 by isojo-go          #+#    #+#             */
-/*   Updated: 2022/09/09 15:37:26 by isojo-go         ###   ########.fr       */
+/*   Updated: 2022/09/12 22:47:14 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_empty_string(void)
+static char	*ft_empty_string(void)
 {
 	char	*s;
 
