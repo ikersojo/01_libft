@@ -1,0 +1,3194 @@
+De: deepthought-no-reply@42urduliz.com <deepthought-no-reply@42urduliz.com>
+Enviado: martes, 13 de septiembre de 2022 13:31
+Para: isojo-go@student.42urduliz.com <isojo-go@student.42urduliz.com>
+Asunto: [Deepthought] Your trace for 42cursus-libft
+ 
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c1r7s6.42urduliz.com
+Darwin 19.6.0 x86_64
+$> date
+Tue Sep 13 15:30:02 CEST 2022
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/c++/4.2.1
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42urduliz.com:vogsphere/intra-uuid-c829b4d0-cfc9-4235-8ef5-fd83475c027f-4408578-isojo-go
+
+= Git history ==================================================================
+$> git -C /tmp/tmp750zm6gd/user log --pretty='%H - %an, %ad : %s'
+6b7a36bb89526944802db55ebefdabb946a2634a - Iker Sojo, Tue Sep 13 08:45:16 2022 +0200 : it02
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp750zm6gd/user
+total 376
+-rw-r--r--  1 root  wheel  2153 Sep 13 15:30 Makefile
+-rw-r--r--  1 root  wheel  2492 Sep 13 15:30 __GIT_HISTORY
+-rw-r--r--  1 root  wheel  1760 Sep 13 15:30 ft_atoi.c
+-rw-r--r--  1 root  wheel  1255 Sep 13 15:30 ft_bzero.c
+-rw-r--r--  1 root  wheel  1477 Sep 13 15:30 ft_calloc.c
+-rw-r--r--  1 root  wheel  1439 Sep 13 15:30 ft_isalnum.c
+-rw-r--r--  1 root  wheel  1414 Sep 13 15:30 ft_isalpha.c
+-rw-r--r--  1 root  wheel  1305 Sep 13 15:30 ft_isascii.c
+-rw-r--r--  1 root  wheel  1571 Sep 13 15:30 ft_isdigit.c
+-rw-r--r--  1 root  wheel  1353 Sep 13 15:30 ft_isprint.c
+-rw-r--r--  1 root  wheel  2197 Sep 13 15:30 ft_itoa.c
+-rw-r--r--  1 root  wheel  1352 Sep 13 15:30 ft_lstadd_back_bonus.c
+-rw-r--r--  1 root  wheel  1275 Sep 13 15:30 ft_lstadd_front_bonus.c
+-rw-r--r--  1 root  wheel  1478 Sep 13 15:30 ft_lstclear_bonus.c
+-rw-r--r--  1 root  wheel  1362 Sep 13 15:30 ft_lstdelone_bonus.c
+-rw-r--r--  1 root  wheel  1241 Sep 13 15:30 ft_lstiter_bonus.c
+-rw-r--r--  1 root  wheel  1262 Sep 13 15:30 ft_lstlast_bonus.c
+-rw-r--r--  1 root  wheel  1814 Sep 13 15:30 ft_lstmap_bonus.c
+-rw-r--r--  1 root  wheel  1451 Sep 13 15:30 ft_lstnew_bonus.c
+-rw-r--r--  1 root  wheel  1198 Sep 13 15:30 ft_lstsize_bonus.c
+-rw-r--r--  1 root  wheel  1755 Sep 13 15:30 ft_memccpy.c
+-rw-r--r--  1 root  wheel  1589 Sep 13 15:30 ft_memchr.c
+-rw-r--r--  1 root  wheel  1855 Sep 13 15:30 ft_memcmp.c
+-rw-r--r--  1 root  wheel  1520 Sep 13 15:30 ft_memcpy.c
+-rw-r--r--  1 root  wheel  1656 Sep 13 15:30 ft_memmove.c
+-rw-r--r--  1 root  wheel  1385 Sep 13 15:30 ft_memset.c
+-rw-r--r--  1 root  wheel  1133 Sep 13 15:30 ft_putchar_fd.c
+-rw-r--r--  1 root  wheel  1189 Sep 13 15:30 ft_putendl_fd.c
+-rw-r--r--  1 root  wheel  1402 Sep 13 15:30 ft_putnbr_fd.c
+-rw-r--r--  1 root  wheel  1191 Sep 13 15:30 ft_putstr_fd.c
+-rw-r--r--  1 root  wheel  2468 Sep 13 15:30 ft_split.c
+-rw-r--r--  1 root  wheel  1619 Sep 13 15:30 ft_strchr.c
+-rw-r--r--  1 root  wheel  1543 Sep 13 15:30 ft_strdup.c
+-rw-r--r--  1 root  wheel  1351 Sep 13 15:30 ft_striteri.c
+-rw-r--r--  1 root  wheel  1508 Sep 13 15:30 ft_strjoin.c
+-rw-r--r--  1 root  wheel  2401 Sep 13 15:30 ft_strlcat.c
+-rw-r--r--  1 root  wheel  1618 Sep 13 15:30 ft_strlcpy.c
+-rw-r--r--  1 root  wheel  1309 Sep 13 15:30 ft_strlen.c
+-rw-r--r--  1 root  wheel  1576 Sep 13 15:30 ft_strmapi.c
+-rw-r--r--  1 root  wheel  1676 Sep 13 15:30 ft_strncmp.c
+-rw-r--r--  1 root  wheel  1821 Sep 13 15:30 ft_strnstr.c
+-rw-r--r--  1 root  wheel  1575 Sep 13 15:30 ft_strrchr.c
+-rw-r--r--  1 root  wheel  1841 Sep 13 15:30 ft_strtrim.c
+-rw-r--r--  1 root  wheel  1846 Sep 13 15:30 ft_substr.c
+-rw-r--r--  1 root  wheel  1463 Sep 13 15:30 ft_tolower.c
+-rw-r--r--  1 root  wheel  1462 Sep 13 15:30 ft_toupper.c
+-rw-r--r--  1 root  wheel  3066 Sep 13 15:30 libft.h
+ 
+= initial_errors ===============================================================
+total 376
+-rw-r--r--  1 deepthought  deepthought  2153 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  2492 Sep 13 13:30 __GIT_HISTORY
+-rw-r--r--  1 deepthought  deepthought  1760 Sep 13 13:30 ft_atoi.c
+-rw-r--r--  1 deepthought  deepthought  1255 Sep 13 13:30 ft_bzero.c
+-rw-r--r--  1 deepthought  deepthought  1477 Sep 13 13:30 ft_calloc.c
+-rw-r--r--  1 deepthought  deepthought  1439 Sep 13 13:30 ft_isalnum.c
+-rw-r--r--  1 deepthought  deepthought  1414 Sep 13 13:30 ft_isalpha.c
+-rw-r--r--  1 deepthought  deepthought  1305 Sep 13 13:30 ft_isascii.c
+-rw-r--r--  1 deepthought  deepthought  1571 Sep 13 13:30 ft_isdigit.c
+-rw-r--r--  1 deepthought  deepthought  1353 Sep 13 13:30 ft_isprint.c
+-rw-r--r--  1 deepthought  deepthought  2197 Sep 13 13:30 ft_itoa.c
+-rw-r--r--  1 deepthought  deepthought  1352 Sep 13 13:30 ft_lstadd_back_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1275 Sep 13 13:30 ft_lstadd_front_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1478 Sep 13 13:30 ft_lstclear_bonus.c
+-rw-
+r--r--  1 deepthought  deepthought  1362 Sep 13 13:30 ft_lstdelone_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1241 Sep 13 13:30 ft_lstiter_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1262 Sep 13 13:30 ft_lstlast_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1814 Sep 13 13:30 ft_lstmap_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1451 Sep 13 13:30 ft_lstnew_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1198 Sep 13 13:30 ft_lstsize_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1755 Sep 13 13:30 ft_memccpy.c
+-rw-r--r--  1 deepthought  deepthought  1589 Sep 13 13:30 ft_memchr.c
+-rw-r--r--  1 deepthought  deepthought  1855 Sep 13 13:30 ft_memcmp.c
+-rw-r--r--  1 deepthought  deepthought  1520 Sep 13 13:30 ft_memcpy.c
+-rw-r--r--  1 deepthought  deepthought  1656 Sep 13 13:30 ft_memmove.c
+-rw-r--r--  1 deepthought  deepthought  1385 Sep 13 13:30 ft_memset.c
+-rw-r--r--  1 deepthought  deepthought  1133 Sep 13 13:30 ft_putchar_fd.c
+-rw-r--r--  1 deepthought  deepthought  1189 Sep 13 13:30 ft_putendl_f
+d.c
+-rw-r--r--  1 deepthought  deepthought  1402 Sep 13 13:30 ft_putnbr_fd.c
+-rw-r--r--  1 deepthought  deepthought  1191 Sep 13 13:30 ft_putstr_fd.c
+-rw-r--r--  1 deepthought  deepthought  2468 Sep 13 13:30 ft_split.c
+-rw-r--r--  1 deepthought  deepthought  1619 Sep 13 13:30 ft_strchr.c
+-rw-r--r--  1 deepthought  deepthought  1543 Sep 13 13:30 ft_strdup.c
+-rw-r--r--  1 deepthought  deepthought  1351 Sep 13 13:30 ft_striteri.c
+-rw-r--r--  1 deepthought  deepthought  1508 Sep 13 13:30 ft_strjoin.c
+-rw-r--r--  1 deepthought  deepthought  2401 Sep 13 13:30 ft_strlcat.c
+-rw-r--r--  1 deepthought  deepthought  1618 Sep 13 13:30 ft_strlcpy.c
+-rw-r--r--  1 deepthought  deepthought  1309 Sep 13 13:30 ft_strlen.c
+-rw-r--r--  1 deepthought  deepthought  1576 Sep 13 13:30 ft_strmapi.c
+-rw-r--r--  1 deepthought  deepthought  1676 Sep 13 13:30 ft_strncmp.c
+-rw-r--r--  1 deepthought  deepthought  1821 Sep 13 13:30 ft_strnstr.c
+-rw-r--r--  1 deepthought  deepthought  1575 Sep 13 13:30 ft_strrchr.c
+-rw-r--r--  1 deepthought
+ deepthought  1841 Sep 13 13:30 ft_strtrim.c
+-rw-r--r--  1 deepthought  deepthought  1846 Sep 13 13:30 ft_substr.c
+-rw-r--r--  1 deepthought  deepthought  1463 Sep 13 13:30 ft_tolower.c
+-rw-r--r--  1 deepthought  deepthought  1462 Sep 13 13:30 ft_toupper.c
+-rw-r--r--  1 deepthought  deepthought  3066 Sep 13 13:30 libft.h
+
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strchr.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_putendl_fd.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_bzero.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_isdigit.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_memmove.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_itoa.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstadd_front_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_putchar_fd.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strlen.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strlcat.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_striteri.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstadd_back_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstmap_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_substr.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strrchr.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstclear_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_atoi.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstlast_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strmapi.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strtrim.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_isprint.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strlcpy.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_memchr.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_calloc.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strnstr.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_memset.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strncmp.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_memcpy.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstnew_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_putnbr_fd.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstsize_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstiter_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_split.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_toupper.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_memccpy.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_isascii.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_isalpha.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strjoin.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_strdup.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_tolower.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_memcmp.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_putstr_fd.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_lstdelone_bonus.c -o compil_single_output
+
+
+$> gcc -Wextra -Wall -Werror -Wall -Wextra -Werror -c ft_isalnum.c -o compil_single_output
+
+
+$> /usr/bin/norminette  ft_strchr.c ft_putendl_fd.c ft_bzero.c ft_isdigit.c ft_memmove.c ft_itoa.c ft_lstadd_front_bonus.c ft_putchar_fd.c ft_strlen.c ft_strlcat.c ft_striteri.c ft_lstadd_back_bonus.c ft_lstmap_bonus.c ft_substr.c ft_strrchr.c ft_lstclear_bonus.c ft_atoi.c ft_lstlast_bonus.c ft_strmapi.c ft_strtrim.c ft_isprint.c ft_strlcpy.c ft_memchr.c ft_calloc.c ft_strnstr.c ft_memset.c ft_strncmp.c ft_memcpy.c ft_lstnew_bonus.c ft_putnbr_fd.c ft_lstsize_bonus.c ft_lstiter_bonus.c ft_split.c ft_toupper.c ft_memccpy.c ft_isascii.c ft_isalpha.c ft_strjoin.c ft_strdup.c ft_tolower.c libft.h ft_memcmp.c ft_putstr_fd.c ft_lstdelone_bonus.c ft_isalnum.c | grep -E '^(Error|Warning)'
+
+
+
+_ft_strchr
+
+
+
+_ft_putendl_fd
+
+
+
+_ft_bzero
+
+
+
+_ft_isdigit
+
+
+
+_ft_memmove
+
+
+
+_ft_digitcount
+_ft_initialize
+_ft_itoa
+_min_int_str
+_zero_str
+
+
+
+_ft_lstadd_front
+
+
+
+_ft_putchar_fd
+
+
+
+_ft_strlen
+
+
+
+_ft_strlcat
+
+
+
+_ft_striteri
+
+
+
+_ft_lstadd_back
+
+
+
+_ft_lstmap
+
+
+
+_ft_empty_string
+_ft_substr
+
+
+
+_ft_strrchr
+
+
+
+_ft_lstclear
+
+
+
+_ft_atoi
+_ft_isspace
+
+
+
+_ft_lstlast
+
+
+
+_ft_strmapi
+
+
+
+_ft_ischarset
+_ft_strtrim
+
+
+
+_ft_isprint
+
+
+
+_ft_strlcpy
+
+
+
+_ft_memchr
+
+
+
+_ft_calloc
+
+
+
+_ft_strnstr
+
+
+
+_ft_memset
+
+
+
+_ft_strncmp
+
+
+
+_ft_memcpy
+
+
+
+_ft_lstnew
+
+
+
+_ft_abs
+_ft_putnbr_fd
+
+
+
+_ft_lstsize
+
+
+
+_ft_lstiter
+
+
+
+_ft_free_array
+_ft_locate_word
+_ft_split
+_ft_wc
+
+
+
+_ft_toupper
+
+
+
+_ft_memccpy
+
+
+
+_ft_isascii
+
+
+
+_ft_isalpha
+
+
+
+_ft_strjoin
+
+
+
+_ft_strdup
+
+
+
+_ft_tolower
+
+
+
+_ft_memcmp
+
+
+
+_ft_putstr_fd
+
+
+
+_ft_lstdelone
+
+
+
+_ft_isalnum
+
+
+
+
+
+ft_putchar_fd
+ft_putstr_fd
+
+
+
+ft_memset
+
+
+
+
+
+
+
+ft_memcpy
+malloc
+
+
+
+
+
+write
+
+
+
+
+
+ft_strlen
+
+
+
+
+
+ft_lstlast
+
+
+
+ft_lstadd_back
+ft_lstclear
+ft_lstnew
+
+
+
+ft_strlen
+malloc
+
+
+
+ft_strlen
+
+
+
+ft_lstdelone
+
+
+
+ft_isdigit
+
+
+
+
+
+ft_strlen
+malloc
+
+
+
+ft_strlen
+malloc
+
+
+
+
+
+
+ft_strlen
+
+
+
+
+
+ft_bzero
+malloc
+
+
+
+
+
+
+
+
+
+
+
+malloc
+
+
+
+ft_putchar_fd
+
+
+
+
+
+
+
+free
+ft_strlcpy
+malloc
+
+
+
+
+
+
+
+
+
+
+
+ft_strlen
+malloc
+
+
+
+ft_strlen
+malloc
+
+
+
+
+
+
+
+
+ft_putchar_fd
+
+
+
+free
+
+
+
+
+total 368
+-rw-r--r--  1 deepthought  deepthought  2153 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  1760 Sep 13 13:30 ft_atoi.c
+-rw-r--r--  1 deepthought  deepthought  1255 Sep 13 13:30 ft_bzero.c
+-rw-r--r--  1 deepthought  deepthought  1477 Sep 13 13:30 ft_calloc.c
+-rw-r--r--  1 deepthought  deepthought  1439 Sep 13 13:30 ft_isalnum.c
+-rw-r--r--  1 deepthought  deepthought  1414 Sep 13 13:30 ft_isalpha.c
+-rw-r--r--  1 deepthought  deepthought  1305 Sep 13 13:30 ft_isascii.c
+-rw-r--r--  1 deepthought  deepthought  1571 Sep 13 13:30 ft_isdigit.c
+-rw-r--r--  1 deepthought  deepthought  1353 Sep 13 13:30 ft_isprint.c
+-rw-r--r--  1 deepthought  deepthought  2197 Sep 13 13:30 ft_itoa.c
+-rw-r--r--  1 deepthought  deepthought  1352 Sep 13 13:30 ft_lstadd_back_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1275 Sep 13 13:30 ft_lstadd_front_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1478 Sep 13 13:30 ft_lstclear_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1362 Sep 13 13:30 ft_lstdelone_bonus
+.c
+-rw-r--r--  1 deepthought  deepthought  1241 Sep 13 13:30 ft_lstiter_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1262 Sep 13 13:30 ft_lstlast_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1814 Sep 13 13:30 ft_lstmap_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1451 Sep 13 13:30 ft_lstnew_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1198 Sep 13 13:30 ft_lstsize_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1755 Sep 13 13:30 ft_memccpy.c
+-rw-r--r--  1 deepthought  deepthought  1589 Sep 13 13:30 ft_memchr.c
+-rw-r--r--  1 deepthought  deepthought  1855 Sep 13 13:30 ft_memcmp.c
+-rw-r--r--  1 deepthought  deepthought  1520 Sep 13 13:30 ft_memcpy.c
+-rw-r--r--  1 deepthought  deepthought  1656 Sep 13 13:30 ft_memmove.c
+-rw-r--r--  1 deepthought  deepthought  1385 Sep 13 13:30 ft_memset.c
+-rw-r--r--  1 deepthought  deepthought  1133 Sep 13 13:30 ft_putchar_fd.c
+-rw-r--r--  1 deepthought  deepthought  1189 Sep 13 13:30 ft_putendl_fd.c
+-rw-r--r--  1 deepthought  deepthought  1402 Sep 13 13:30 ft_putnbr_
+fd.c
+-rw-r--r--  1 deepthought  deepthought  1191 Sep 13 13:30 ft_putstr_fd.c
+-rw-r--r--  1 deepthought  deepthought  2468 Sep 13 13:30 ft_split.c
+-rw-r--r--  1 deepthought  deepthought  1619 Sep 13 13:30 ft_strchr.c
+-rw-r--r--  1 deepthought  deepthought  1543 Sep 13 13:30 ft_strdup.c
+-rw-r--r--  1 deepthought  deepthought  1351 Sep 13 13:30 ft_striteri.c
+-rw-r--r--  1 deepthought  deepthought  1508 Sep 13 13:30 ft_strjoin.c
+-rw-r--r--  1 deepthought  deepthought  2401 Sep 13 13:30 ft_strlcat.c
+-rw-r--r--  1 deepthought  deepthought  1618 Sep 13 13:30 ft_strlcpy.c
+-rw-r--r--  1 deepthought  deepthought  1309 Sep 13 13:30 ft_strlen.c
+-rw-r--r--  1 deepthought  deepthought  1576 Sep 13 13:30 ft_strmapi.c
+-rw-r--r--  1 deepthought  deepthought  1676 Sep 13 13:30 ft_strncmp.c
+-rw-r--r--  1 deepthought  deepthought  1821 Sep 13 13:30 ft_strnstr.c
+-rw-r--r--  1 deepthought  deepthought  1575 Sep 13 13:30 ft_strrchr.c
+-rw-r--r--  1 deepthought  deepthought  1841 Sep 13 13:30 ft_strtrim.c
+-rw-r--r--  1 deepthought 
+deepthought  1846 Sep 13 13:30 ft_substr.c
+-rw-r--r--  1 deepthought  deepthought  1463 Sep 13 13:30 ft_tolower.c
+-rw-r--r--  1 deepthought  deepthought  1462 Sep 13 13:30 ft_toupper.c
+-rw-r--r--  1 deepthought  deepthought  3066 Sep 13 13:30 libft.h
+
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalpha.c -o ft_isalpha.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isdigit.c -o ft_isdigit.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalnum.c -o ft_isalnum.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isascii.c -o ft_isascii.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isprint.c -o ft_isprint.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_toupper.c -o ft_toupper.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_tolower.c -o ft_tolower.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memset.c -o ft_memset.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_bzero.c -o ft_bzero.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcpy.c -o ft_memcpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memccpy.c -o ft_memccpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memmove.c -o ft_memmove.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memchr.c -o ft_memchr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcmp.c -o ft_memcmp.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlen.c -o ft_strlen.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcpy.c -o ft_strlcpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcat.c -o ft_strlcat.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strchr.c -o ft_strchr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strrchr.c -o ft_strrchr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strncmp.c -o ft_strncmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strnstr.c -o ft_strnstr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_atoi.c -o ft_atoi.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_calloc.c -o ft_calloc.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strdup.c -o ft_strdup.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_substr.c -o ft_substr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strjoin.c -o ft_strjoin.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strtrim.c -o ft_strtrim.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_split.c -o ft_split.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_itoa.c -o ft_itoa.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strmapi.c -o ft_strmapi.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_striteri.c -o ft_striteri.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putchar_fd.c -o ft_putchar_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putstr_fd.c -o ft_putstr_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putendl_fd.c -o ft_putendl_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+
+ar rc libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalpha.c -o ft_isalpha.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isdigit.c -o ft_isdigit.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalnum.c -o ft_isalnum.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isascii.c -o ft_isascii.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isprint.c -o ft_isprint.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_toupper.c -o ft_toupper.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_tolower.c -o ft_tolower.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memset.c -o ft_memset.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_bzero.c -o ft_bzero.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcpy.c -o ft_memcpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memccpy.c -o ft_memccpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memmove.c -o ft_memmove.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memchr.c -o ft_memchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcmp.c -o ft_memcmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlen.c -o ft_strlen.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcpy.c -o ft_strlcpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcat.c -o ft_strlcat.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strchr.c -o ft_strchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strrchr.c -o ft_strrchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strncmp.c -o ft_strncmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strnstr.c -o ft_strnstr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_atoi.c -o ft_atoi.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_calloc.c -o ft_calloc.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strdup.c -o ft_strdup.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_substr.c -o ft_substr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strjoin.c -o ft_strjoin.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strtrim.c -o ft_strtrim.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_split.c -o ft_split.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_itoa.c -o ft_itoa.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strmapi.c -o ft_strmapi.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_striteri.c -o ft_striteri.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ar rc libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+
+total 368
+-rw-r--r--  1 deepthought  deepthought  2153 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  1760 Sep 13 13:30 ft_atoi.c
+-rw-r--r--  1 deepthought  deepthought  1255 Sep 13 13:30 ft_bzero.c
+-rw-r--r--  1 deepthought  deepthought  1477 Sep 13 13:30 ft_calloc.c
+-rw-r--r--  1 deepthought  deepthought  1439 Sep 13 13:30 ft_isalnum.c
+-rw-r--r--  1 deepthought  deepthought  1414 Sep 13 13:30 ft_isalpha.c
+-rw-r--r--  1 deepthought  deepthought  1305 Sep 13 13:30 ft_isascii.c
+-rw-r--r--  1 deepthought  deepthought  1571 Sep 13 13:30 ft_isdigit.c
+-rw-r--r--  1 deepthought  deepthought  1353 Sep 13 13:30 ft_isprint.c
+-rw-r--r--  1 deepthought  deepthought  2197 Sep 13 13:30 ft_itoa.c
+-rw-r--r--  1 deepthought  deepthought  1352 Sep 13 13:30 ft_lstadd_back_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1275 Sep 13 13:30 ft_lstadd_front_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1478 Sep 13 13:30 ft_lstclear_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1362 Sep 13 13:30 ft_lstdelone_bonus
+.c
+-rw-r--r--  1 deepthought  deepthought  1241 Sep 13 13:30 ft_lstiter_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1262 Sep 13 13:30 ft_lstlast_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1814 Sep 13 13:30 ft_lstmap_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1451 Sep 13 13:30 ft_lstnew_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1198 Sep 13 13:30 ft_lstsize_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1755 Sep 13 13:30 ft_memccpy.c
+-rw-r--r--  1 deepthought  deepthought  1589 Sep 13 13:30 ft_memchr.c
+-rw-r--r--  1 deepthought  deepthought  1855 Sep 13 13:30 ft_memcmp.c
+-rw-r--r--  1 deepthought  deepthought  1520 Sep 13 13:30 ft_memcpy.c
+-rw-r--r--  1 deepthought  deepthought  1656 Sep 13 13:30 ft_memmove.c
+-rw-r--r--  1 deepthought  deepthought  1385 Sep 13 13:30 ft_memset.c
+-rw-r--r--  1 deepthought  deepthought  1133 Sep 13 13:30 ft_putchar_fd.c
+-rw-r--r--  1 deepthought  deepthought  1189 Sep 13 13:30 ft_putendl_fd.c
+-rw-r--r--  1 deepthought  deepthought  1402 Sep 13 13:30 ft_putnbr_
+fd.c
+-rw-r--r--  1 deepthought  deepthought  1191 Sep 13 13:30 ft_putstr_fd.c
+-rw-r--r--  1 deepthought  deepthought  2468 Sep 13 13:30 ft_split.c
+-rw-r--r--  1 deepthought  deepthought  1619 Sep 13 13:30 ft_strchr.c
+-rw-r--r--  1 deepthought  deepthought  1543 Sep 13 13:30 ft_strdup.c
+-rw-r--r--  1 deepthought  deepthought  1351 Sep 13 13:30 ft_striteri.c
+-rw-r--r--  1 deepthought  deepthought  1508 Sep 13 13:30 ft_strjoin.c
+-rw-r--r--  1 deepthought  deepthought  2401 Sep 13 13:30 ft_strlcat.c
+-rw-r--r--  1 deepthought  deepthought  1618 Sep 13 13:30 ft_strlcpy.c
+-rw-r--r--  1 deepthought  deepthought  1309 Sep 13 13:30 ft_strlen.c
+-rw-r--r--  1 deepthought  deepthought  1576 Sep 13 13:30 ft_strmapi.c
+-rw-r--r--  1 deepthought  deepthought  1676 Sep 13 13:30 ft_strncmp.c
+-rw-r--r--  1 deepthought  deepthought  1821 Sep 13 13:30 ft_strnstr.c
+-rw-r--r--  1 deepthought  deepthought  1575 Sep 13 13:30 ft_strrchr.c
+-rw-r--r--  1 deepthought  deepthought  1841 Sep 13 13:30 ft_strtrim.c
+-rw-r--r--  1 deepthought 
+deepthought  1846 Sep 13 13:30 ft_substr.c
+-rw-r--r--  1 deepthought  deepthought  1463 Sep 13 13:30 ft_tolower.c
+-rw-r--r--  1 deepthought  deepthought  1462 Sep 13 13:30 ft_toupper.c
+-rw-r--r--  1 deepthought  deepthought  3066 Sep 13 13:30 libft.h
+
+
+rm -f ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew_bonus.o ft_lstadd_front_bonus.o ft_lstsize_bonus.o ft_lstlast_bonus.o ft_lstadd_back_bonus.o ft_lstdelone_bonus.o ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o
+rm -f libft.a
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalpha.c -o ft_isalpha.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isdigit.c -o ft_isdigit.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalnum.c -o ft_isalnum.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isascii.c -o ft_isascii.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isprint.c -o ft_isprint.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_toupper.c -o ft_toupper.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_tolower.c -o ft_tolower.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memset.c -o ft_memset.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_bzero.c -o ft_bzero.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcpy.c -o ft_memcpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memccpy.c -o ft_memccpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memmove.c -o ft_memmove.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memchr.c -o ft_memchr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcmp.c -o ft_memcmp.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlen.c -o ft_strlen.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcpy.c -o ft_strlcpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcat.c -o ft_strlcat.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strchr.c -o ft_strchr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strrchr.c -o ft_strrchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strncmp.c -o ft_strncmp.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strnstr.c -o ft_strnstr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_atoi.c -o ft_atoi.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_calloc.c -o ft_calloc.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strdup.c -o ft_strdup.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_substr.c -o ft_substr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strjoin.c -o ft_strjoin.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strtrim.c -o ft_strtrim.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_split.c -o ft_split.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_itoa.c -o ft_itoa.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strmapi.c -o ft_strmapi.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_striteri.c -o ft_striteri.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putchar_fd.c -o ft_putchar_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putstr_fd.c -o ft_putstr_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putendl_fd.c -o ft_putendl_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+
+ar rc libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+
+
+rm -f ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew_bonus.o ft_lstadd_front_bonus.o ft_lstsize_bonus.o ft_lstlast_bonus.o ft_lstadd_back_bonus.o ft_lstdelone_bonus.o ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o
+rm -f libft.a
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalpha.c -o ft_isalpha.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isdigit.c -o ft_isdigit.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalnum.c -o ft_isalnum.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isascii.c -o ft_isascii.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isprint.c -o ft_isprint.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_toupper.c -o ft_toupper.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_tolower.c -o ft_tolower.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memset.c -o ft_memset.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_bzero.c -o ft_bzero.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcpy.c -o ft_memcpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memccpy.c -o ft_memccpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memmove.c -o ft_memmove.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memchr.c -o ft_memchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcmp.c -o ft_memcmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlen.c -o ft_strlen.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcpy.c -o ft_strlcpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcat.c -o ft_strlcat.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strchr.c -o ft_strchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strrchr.c -o ft_strrchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strncmp.c -o ft_strncmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strnstr.c -o ft_strnstr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_atoi.c -o ft_atoi.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_calloc.c -o ft_calloc.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strdup.c -o ft_strdup.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_substr.c -o ft_substr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strjoin.c -o ft_strjoin.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strtrim.c -o ft_strtrim.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_split.c -o ft_split.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_itoa.c -o ft_itoa.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strmapi.c -o ft_strmapi.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_striteri.c -o ft_striteri.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ar rc libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+
+total 440
+-rw-r--r--  1 deepthought  deepthought   2153 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought   1760 Sep 13 13:30 ft_atoi.c
+-rw-r--r--  1 deepthought  deepthought   1255 Sep 13 13:30 ft_bzero.c
+-rw-r--r--  1 deepthought  deepthought   1477 Sep 13 13:30 ft_calloc.c
+-rw-r--r--  1 deepthought  deepthought   1439 Sep 13 13:30 ft_isalnum.c
+-rw-r--r--  1 deepthought  deepthought   1414 Sep 13 13:30 ft_isalpha.c
+-rw-r--r--  1 deepthought  deepthought   1305 Sep 13 13:30 ft_isascii.c
+-rw-r--r--  1 deepthought  deepthought   1571 Sep 13 13:30 ft_isdigit.c
+-rw-r--r--  1 deepthought  deepthought   1353 Sep 13 13:30 ft_isprint.c
+-rw-r--r--  1 deepthought  deepthought   2197 Sep 13 13:30 ft_itoa.c
+-rw-r--r--  1 deepthought  deepthought   1352 Sep 13 13:30 ft_lstadd_back_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1275 Sep 13 13:30 ft_lstadd_front_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1478 Sep 13 13:30 ft_lstclear_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1362 Sep 13 13:30 ft_l
+stdelone_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1241 Sep 13 13:30 ft_lstiter_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1262 Sep 13 13:30 ft_lstlast_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1814 Sep 13 13:30 ft_lstmap_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1451 Sep 13 13:30 ft_lstnew_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1198 Sep 13 13:30 ft_lstsize_bonus.c
+-rw-r--r--  1 deepthought  deepthought   1755 Sep 13 13:30 ft_memccpy.c
+-rw-r--r--  1 deepthought  deepthought   1589 Sep 13 13:30 ft_memchr.c
+-rw-r--r--  1 deepthought  deepthought   1855 Sep 13 13:30 ft_memcmp.c
+-rw-r--r--  1 deepthought  deepthought   1520 Sep 13 13:30 ft_memcpy.c
+-rw-r--r--  1 deepthought  deepthought   1656 Sep 13 13:30 ft_memmove.c
+-rw-r--r--  1 deepthought  deepthought   1385 Sep 13 13:30 ft_memset.c
+-rw-r--r--  1 deepthought  deepthought   1133 Sep 13 13:30 ft_putchar_fd.c
+-rw-r--r--  1 deepthought  deepthought   1189 Sep 13 13:30 ft_putendl_fd.c
+-rw-r--r--  1 deepthought  deepthought  
+1402 Sep 13 13:30 ft_putnbr_fd.c
+-rw-r--r--  1 deepthought  deepthought   1191 Sep 13 13:30 ft_putstr_fd.c
+-rw-r--r--  1 deepthought  deepthought   2468 Sep 13 13:30 ft_split.c
+-rw-r--r--  1 deepthought  deepthought   1619 Sep 13 13:30 ft_strchr.c
+-rw-r--r--  1 deepthought  deepthought   1543 Sep 13 13:30 ft_strdup.c
+-rw-r--r--  1 deepthought  deepthought   1351 Sep 13 13:30 ft_striteri.c
+-rw-r--r--  1 deepthought  deepthought   1508 Sep 13 13:30 ft_strjoin.c
+-rw-r--r--  1 deepthought  deepthought   2401 Sep 13 13:30 ft_strlcat.c
+-rw-r--r--  1 deepthought  deepthought   1618 Sep 13 13:30 ft_strlcpy.c
+-rw-r--r--  1 deepthought  deepthought   1309 Sep 13 13:30 ft_strlen.c
+-rw-r--r--  1 deepthought  deepthought   1576 Sep 13 13:30 ft_strmapi.c
+-rw-r--r--  1 deepthought  deepthought   1676 Sep 13 13:30 ft_strncmp.c
+-rw-r--r--  1 deepthought  deepthought   1821 Sep 13 13:30 ft_strnstr.c
+-rw-r--r--  1 deepthought  deepthought   1575 Sep 13 13:30 ft_strrchr.c
+-rw-r--r--  1 deepthought  deepthought   1841 Sep 13 13:3
+0 ft_strtrim.c
+-rw-r--r--  1 deepthought  deepthought   1846 Sep 13 13:30 ft_substr.c
+-rw-r--r--  1 deepthought  deepthought   1463 Sep 13 13:30 ft_tolower.c
+-rw-r--r--  1 deepthought  deepthought   1462 Sep 13 13:30 ft_toupper.c
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+$> cp libft.a /tmp/tmp750zm6gd/ref/libft.a
+
+
+Grade: 1
+
+= test_ft_isalnum ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1261 Sep 13 13:30 test_ft_isalnum.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:30 test_lib
+
+
+Testing ft_isalnum
+ [*] ft_isalnum : [OK]
+
+
+Testing ft_isalnum
+ [*] ft_isalnum : [OK]
+
+OK
+Grade: 1
+
+= test_ft_isalpha ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1260 Sep 13 13:30 test_ft_isalpha.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:30 test_lib
+
+
+Testing ft_isalpha
+ [*] ft_isalpha : [OK]
+
+
+Testing ft_isalpha
+ [*] ft_isalpha : [OK]
+
+OK
+Grade: 2
+
+= test_ft_isascii ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1263 Sep 13 13:30 test_ft_isascii.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:30 test_lib
+
+
+Testing ft_isascii
+ [*] ft_isascii : [OK]
+
+
+Testing ft_isascii
+ [*] ft_isascii : [OK]
+
+OK
+Grade: 3
+
+= test_ft_isdigit ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1260 Sep 13 13:30 test_ft_isdigit.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:30 test_lib
+
+
+Testing ft_isdigit
+ [*] ft_isdigit : [OK]
+
+
+Testing ft_isdigit
+ [*] ft_isdigit : [OK]
+
+OK
+Grade: 3
+
+= test_ft_isprint ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1260 Sep 13 13:30 test_ft_isprint.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:30 test_lib
+
+
+Testing ft_isprint
+ [*] ft_isprint : [OK]
+
+
+Testing ft_isprint
+ [*] ft_isprint : [OK]
+
+OK
+Grade: 3
+
+= test_ft_atoi =================================================================
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2605 Sep 13 13:30 test_ft_atoi.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13488 Sep 13 13:30 test_lib
+
+
+Testing ft_atoi
+ [*] ft_atoi : [OK]
+
+
+Testing ft_atoi
+ [*] ft_atoi : [OK]
+
+OK
+Grade: 3
+
+= test_ft_bzero ================================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2980 Sep 13 13:30 test_ft_bzero.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_bzero.c:79:25: warning: null character(s) preserved in string literal [-Wnull-character]
+        count += verify_bzero("<U+0000>         ", 12);
+                               ^
+1 warning generated.
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13800 Sep 13 13:30 test_lib
+
+
+Testing ft_bzero
+ [*] ft_bzero : [OK]
+
+
+Testing ft_bzero
+ [*] ft_bzero : [OK]
+
+OK
+Grade: 3
+
+= test_ft_calloc ===============================================================
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   3198 Sep 13 13:30 test_ft_calloc.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13776 Sep 13 13:30 test_lib
+
+
+Testing ft_calloc
+ [*] ft_calloc : [OK]
+
+
+Testing ft_calloc
+ [*] ft_calloc : [OK]
+
+OK
+Grade: 3
+
+= test_ft_itoa =================================================================
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2795 Sep 13 13:30 test_ft_itoa.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13664 Sep 13 13:30 test_lib
+
+
+Testing ft_itoa
+ [*] ft_itoa : [OK]
+
+
+Testing ft_itoa
+ [*] ft_itoa : [OK]
+
+OK
+Grade: 3
+
+= test_ft_memchr ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2802 Sep 13 13:30 test_ft_memchr.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_memchr.c:51:30: warning: null character(s) preserved in char literal [-Wnull-character]
+        count += verify_memchr("", '<U+0000>', 1);
+                                    ^
+test_ft_memchr.c:52:30: warning: null character(s) preserved in char literal [-Wnull-character]
+        count += verify_memchr("", '<U+0000>', 0);
+                                    ^
+
+test_ft_memchr.c:53:35: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("b0nmck", "S", 0);
+                                         ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:54:39: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("IWOecyjkRo", "D", 5);
+                                             ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:55:39: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_m
+emchr("DfclEYXbM3", "y", 5);
+                                             ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:56:33: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("Wa8O", "2", 2);
+                                       ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:57:33: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("U8ed", "4", 0);
+                                       ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( cha
+r *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:58:37: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("qHohwZ4f", "z", 6);
+                                           ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:59:35: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("WaPU8X", "q", 8);
+                                         ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:60:34: warning: incompatible pointer to integer conversion passing '
+char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("w4pML", "f", 2);
+                                        ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:61:45: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("xKXyJRj9N7102itH", "S", 7);
+                                                   ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:62:34: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("jdUxt", "c", 3);
+                                        ^~~
+test_ft
+_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:63:32: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("Bo3", "U", 1);
+                                      ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:64:35: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("86IqnP", "B", 2);
+                                         ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                  
+^
+test_ft_memchr.c:65:43: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("7C15XQELeWY0Bj", "Y", 1);
+                                                 ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:66:40: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("b0VfC1RoULI", "5", 6);
+                                              ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:67:39: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+    
+   count += verify_memchr("fUWPdTXiHb", "t", 3);
+                                             ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:68:41: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("6HvFCdijtm74", "c", 7);
+                                               ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:69:33: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("BeL9", "k", 5);
+                                       ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' her
+e
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:70:43: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("fngKNM6qQx4Y9U", "b", 5);
+                                                 ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:71:40: warning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("jNJgDYVvXH0", "5", 7);
+                                              ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+test_ft_memchr.c:72:42: war
+ning: incompatible pointer to integer conversion passing 'char [2]' to parameter of type 'int' [-Wint-conversion]
+        count += verify_memchr("uvp6DiYKRIOw5", "f", 0);
+                                                ^~~
+test_ft_memchr.c:20:41: note: passing argument to parameter 'ch' here
+int             verify_memchr( char *template, int ch, int size )
+                                                   ^
+22 warnings generated.
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13424 Sep 13 13:30 test_lib
+
+
+Testing ft_memchr
+ [*] ft_memchr : [OK]
+
+
+Testing ft_memchr
+ [*] ft_memchr : [OK]
+
+OK
+Grade: 3
+
+= test_ft_memcmp ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   3652 Sep 13 13:30 test_ft_memcmp.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_memcmp.c:41:60: warning: null character(s) preserved in string literal [-Wnull-character]
+        count += verify_memcmp((void const *) "", (void const *) "<U+0000>", 2);
+                                                                  ^
+test_ft_memcmp.c:42:72: warning: null character(s) preserved in string literal [-Wnull-character]
+        count += verify_memcmp((void const *) "123456", (void const *) "123456<U+0000>", 42);
+                                                                              ^
+2 warnings generated.
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13424 Sep 13 13:30 test_lib
+
+
+Testing ft_memcmp
+ [*] ft_memcmp : [OK]
+
+
+Testing ft_memcmp
+ [*] ft_memcmp : [OK]
+
+OK
+Grade: 3
+
+= test_ft_memcpy ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   3420 Sep 13 13:30 test_ft_memcpy.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_memcpy.c:83:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"GpMZcg", 5);
+                               ^~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:84:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"7JUtDh", 5);
+                               ^~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:85:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"ShOFr1xk4", 7);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:86:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"Mmn9a6lqhxKJrPgjd", 4);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:87:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"cLAqVxp", 2);
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:88:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"RnJ", 5);
+                               ^~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:89:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"RVEtpoZu0I", 5);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:90:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"i8NYaDkZJUbBAdFh6", 4);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:91:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"YV2k", 7);
+                               ^~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:92:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"jgG5lAunNQSMzbo0y", 3);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:93:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"LdvQXUqPO", 4);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:94:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"QS9", 4);
+                               ^~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:95:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"1KmwUhpSWQ6l83r", 7);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:96:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"wDSP5HNoIr7Ad", 3);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:97:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"UVTrKSQ", 0);
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:98:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"mxN", 8);
+                               ^~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:99:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"w9IbHuqltmMvRP4", 1);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:100:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"5spMGg", 0);
+                               ^~~~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:101:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"1K4y", 4);
+                               ^~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int           
+ verify_memcpy(void* v, size_t size)
+                                    ^
+test_ft_memcpy.c:102:25: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memcpy((void const *)"h7Da", 0);
+                               ^~~~~~~~~~~~~~~~~~~~
+test_ft_memcpy.c:32:26: note: passing argument to parameter 'v' here
+int             verify_memcpy(void* v, size_t size)
+                                    ^
+20 warnings generated.
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13744 Sep 13 13:30 test_lib
+
+
+Testing ft_memcpy
+ [*] ft_memcpy : [OK]
+
+
+Testing ft_memcpy
+ [*] ft_memcpy : [OK]
+
+OK
+Grade: 3
+
+= test_ft_memmove ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   3808 Sep 13 13:30 test_ft_memmove.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_memmove.c:88:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"XnEH58Bw", 0, 4);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:89:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"rbDUe", 8, 1);
+                                ^~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:90:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"4ES1mWnj", 6, 1);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:91:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"PprmN5Vn0Il7ev", 0, 0);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:92:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"lF0", 6, 3);
+                                ^~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:93:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"mwdFcanotU5yXWM", 6, 4);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:94:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"XCmtDuQT", 6, 1);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:95:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"GX7M43rq", 6, 1);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:96:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"Yn98NWHQIP06rjKM", 4, 2);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:97:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"QKURGqmykb43", 5, 6);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:98:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"ZIubv4CY7", 0, 6);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:99:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"uk8EcP95DlaJ", 1, 4);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:100:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"btfwvJUcIXGL7r", 3, 2);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:101:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"ZBOtXahGkug29F", 5, 1);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:102:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"a0n4M2qv8HxhoYfr", 2, 0);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:103:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"cFmrCh8Vy9b", 8, 2);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:104:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"TwCAd86e3XysuS1cN", 3, 6);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:105:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"KDij63shFI", 4, 6);
+               
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:106:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"FMRm2uck7Id", 8, 4);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passing argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+test_ft_memmove.c:107:26: warning: passing 'const void *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        count += verify_memmove((void const *)"D1rKQtBkUneYpMV", 0, 6);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_ft_memmove.c:32:28: note: passin
+g argument to parameter 'v' here
+int             verify_memmove(void * v, size_t mem_size, size_t size)
+                                      ^
+20 warnings generated.
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13808 Sep 13 13:30 test_lib
+
+
+Testing ft_memmove
+ [*] ft_memmove : [OK]
+
+
+Testing ft_memmove
+ [*] ft_memmove : [OK]
+
+OK
+Grade: 3
+
+= test_ft_memset ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   3691 Sep 13 13:30 test_ft_memset.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_memset.c:91:26: warning: null character(s) preserved in string literal [-Wnull-character]
+        count += verify_memset("<U+0000>", 1, 1);
+                                ^
+1 warning generated.
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13744 Sep 13 13:30 test_lib
+
+
+Testing ft_memset
+ [*] ft_memset : [OK]
+
+
+Testing ft_memset
+ [*] ft_memset : [OK]
+
+OK
+Grade: 3
+
+= test_ft_putchar_fd ===========================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1869 Sep 13 13:30 test_ft_putchar_fd.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  10072 Sep 13 13:30 test_lib
+
+
+Testing ft_putchar_fd
+ [*] ft_putchar_fd : [OK]
+
+
+Testing ft_putchar_fd
+ [*] ft_putchar_fd : [OK]
+
+OK
+Grade: 3
+
+= test_ft_putendl_fd ===========================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   4933 Sep 13 13:30 test_ft_putendl_fd.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14440 Sep 13 13:30 test_lib
+
+
+Testing ft_putendl_fd
+ [*] ft_putendl_fd : [OK]
+
+
+Testing ft_putendl_fd
+ [*] ft_putendl_fd : [OK]
+
+OK
+Grade: 3
+
+= test_ft_putnbr_fd ============================================================
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2864 Sep 13 13:30 test_ft_putnbr_fd.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14424 Sep 13 13:30 test_lib
+
+
+Testing ft_putnbr_fd
+ [*] ft_putnbr_fd : [OK]
+
+
+Testing ft_putnbr_fd
+ [*] ft_putnbr_fd : [OK]
+
+OK
+Grade: 3
+
+= test_ft_putstr_fd ============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1976 Sep 13 13:30 test_ft_putstr_fd.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14344 Sep 13 13:30 test_lib
+
+
+Testing ft_putstr_fd
+ [*] ft_putstr_fd : [OK]
+
+
+Testing ft_putstr_fd
+ [*] ft_putstr_fd : [OK]
+
+OK
+Grade: 3
+
+= test_ft_split ================================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   7021 Sep 13 13:30 test_ft_split.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 40
+-rwxr-xr-x  1 deepthought  deepthought  18008 Sep 13 13:30 test_lib
+
+
+Testing ft_split
+ [*] ft_split : [OK]
+
+
+Testing ft_split
+ [*] ft_split : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strchr ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   4807 Sep 13 13:30 test_ft_strchr.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13612 Sep 13 13:30 test_lib
+
+
+Testing ft_strchr
+ [*] ft_strchr : [OK]
+
+
+Testing ft_strchr
+ [*] ft_strchr : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strdup ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   5068 Sep 13 13:30 test_ft_strdup.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13544 Sep 13 13:30 test_lib
+
+
+Testing ft_strdup
+ [*] ft_strdup : [OK]
+
+
+Testing ft_strdup
+ [*] ft_strdup : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strjoin ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 144
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought  12856 Sep 13 13:30 test_ft_strjoin.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+test_ft_strjoin.c:48:66: warning: null character(s) preserved in string literal [-Wnull-character]
+        count += verify_strjoin("1-2-3-4-5-6-7-8--8-8--8-4------4--4", "<U+0000>", "1-2-3-4-5-6-7-8--8-8--8-4------4--4");
+                                                                        ^
+1 warning generated.
+
+
+total 48
+-rwxr-xr-x  1 deepthought  deepthought  21744 Sep 13 13:30 test_lib
+
+
+Testing ft_strjoin
+ [*] ft_strjoin : [OK]
+
+
+Testing ft_strjoin
+ [*] ft_strjoin : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strlcat ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   5082 Sep 13 13:30 test_ft_strlcat.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13568 Sep 13 13:30 test_lib
+
+
+Testing ft_strlcat
+ [*] ft_strlcat : [OK]
+
+
+Testing ft_strlcat
+ [*] ft_strlcat : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strlcpy ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   4705 Sep 13 13:30 test_ft_strlcpy.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13668 Sep 13 13:30 test_lib
+
+
+Testing ft_strlcpy
+ [*] ft_strlcpy : [OK]
+
+
+Testing ft_strlcpy
+ [*] ft_strlcpy : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strlen ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:30 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:30 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:30 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:30 malloc.c
+-rw-r--r--  1 deepthought  deepthought   4813 Sep 13 13:30 test_ft_strlen.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:30 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:30 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13424 Sep 13 13:31 test_lib
+
+
+Testing ft_strlen
+ [*] ft_strlen : [OK]
+
+
+Testing ft_strlen
+ [*] ft_strlen : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strmapi ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   5089 Sep 13 13:31 test_ft_strmapi.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13624 Sep 13 13:31 test_lib
+
+
+Testing ft_strmapi
+ [*] ft_strmapi : [OK]
+
+
+Testing ft_strmapi
+ [*] ft_strmapi : [OK]
+
+OK
+Grade: 3
+
+= test_ft_striteri =============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 104
+-rw-r--r--  1 deepthought  deepthought    950 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   4860 Sep 13 13:31 test_ft_striteri.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  8744 Sep 13 13:31 test_lib
+
+
+Testing ft_striteri
+ [*] ft_striteri : [OK]
+
+
+Testing ft_striteri
+ [*] ft_striteri : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strncmp ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2894 Sep 13 13:31 test_ft_strncmp.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13424 Sep 13 13:31 test_lib
+
+
+Testing ft_strncmp
+ [*] ft_strncmp : [OK]
+
+
+Testing ft_strncmp
+ [*] ft_strncmp : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strnstr ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2415 Sep 13 13:31 test_ft_strnstr.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13472 Sep 13 13:31 test_lib
+
+
+Testing ft_strnstr
+ [*] ft_strnstr : [OK]
+
+
+Testing ft_strnstr
+ [*] ft_strnstr : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strrchr ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   4951 Sep 13 13:31 test_ft_strrchr.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13652 Sep 13 13:31 test_lib
+
+
+Testing ft_strrchr
+ [*] ft_strrchr : [OK]
+
+
+Testing ft_strrchr
+ [*] ft_strrchr : [OK]
+
+OK
+Grade: 3
+
+= test_ft_strtrim ==============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 136
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   8270 Sep 13 13:31 test_ft_strtrim.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13584 Sep 13 13:31 test_lib
+
+
+Testing ft_strtrim
+ [*] ft_strtrim : [OK]
+
+
+Testing ft_strtrim
+ [*] ft_strtrim : [OK]
+
+OK
+Grade: 3
+
+= test_ft_substr ===============================================================
+/private/var/root/venv2.7/lib/python2.7/site-packages/deepthought-2.0-py2.7.egg/deepthought/helpers.py:30: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.primitives import serialization as crypto_serialization
+
+
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 128
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   5551 Sep 13 13:31 test_ft_substr.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13584 Sep 13 13:31 test_lib
+
+
+Testing ft_substr
+ [*] ft_substr : [OK]
+
+
+Testing ft_substr
+ [*] ft_substr : [OK]
+
+OK
+Grade: 3
+
+= test_ft_tolower ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1699 Sep 13 13:31 test_ft_tolower.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:31 test_lib
+
+
+Testing ft_tolower
+ [*] ft_tolower : [OK]
+
+
+Testing ft_tolower
+ [*] ft_tolower : [OK]
+
+OK
+Grade: 3
+
+= test_ft_toupper ==============================================================
+$> cp /tmp/tmp750zm6gd/ref/libft.a libft.a
+
+
+total 72
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+
+total 120
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  35424 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   1701 Sep 13 13:31 test_ft_toupper.c
+-rw-r--r--  1 deepthought  deepthought    969 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 24
+-rwxr-xr-x  1 deepthought  deepthought  9328 Sep 13 13:31 test_lib
+
+
+Testing ft_toupper
+ [*] ft_toupper : [OK]
+
+
+Testing ft_toupper
+ [*] ft_toupper : [OK]
+
+OK
+Grade: 3
+
+= bonus ========================================================================
+
+total 368
+-rw-r--r--  1 deepthought  deepthought  2153 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  1760 Sep 13 13:31 ft_atoi.c
+-rw-r--r--  1 deepthought  deepthought  1255 Sep 13 13:31 ft_bzero.c
+-rw-r--r--  1 deepthought  deepthought  1477 Sep 13 13:31 ft_calloc.c
+-rw-r--r--  1 deepthought  deepthought  1439 Sep 13 13:31 ft_isalnum.c
+-rw-r--r--  1 deepthought  deepthought  1414 Sep 13 13:31 ft_isalpha.c
+-rw-r--r--  1 deepthought  deepthought  1305 Sep 13 13:31 ft_isascii.c
+-rw-r--r--  1 deepthought  deepthought  1571 Sep 13 13:31 ft_isdigit.c
+-rw-r--r--  1 deepthought  deepthought  1353 Sep 13 13:31 ft_isprint.c
+-rw-r--r--  1 deepthought  deepthought  2197 Sep 13 13:31 ft_itoa.c
+-rw-r--r--  1 deepthought  deepthought  1352 Sep 13 13:31 ft_lstadd_back_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1275 Sep 13 13:31 ft_lstadd_front_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1478 Sep 13 13:31 ft_lstclear_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1362 Sep 13 13:31 ft_lstdelone_bonus
+.c
+-rw-r--r--  1 deepthought  deepthought  1241 Sep 13 13:31 ft_lstiter_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1262 Sep 13 13:31 ft_lstlast_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1814 Sep 13 13:31 ft_lstmap_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1451 Sep 13 13:31 ft_lstnew_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1198 Sep 13 13:31 ft_lstsize_bonus.c
+-rw-r--r--  1 deepthought  deepthought  1755 Sep 13 13:31 ft_memccpy.c
+-rw-r--r--  1 deepthought  deepthought  1589 Sep 13 13:31 ft_memchr.c
+-rw-r--r--  1 deepthought  deepthought  1855 Sep 13 13:31 ft_memcmp.c
+-rw-r--r--  1 deepthought  deepthought  1520 Sep 13 13:31 ft_memcpy.c
+-rw-r--r--  1 deepthought  deepthought  1656 Sep 13 13:31 ft_memmove.c
+-rw-r--r--  1 deepthought  deepthought  1385 Sep 13 13:31 ft_memset.c
+-rw-r--r--  1 deepthought  deepthought  1133 Sep 13 13:31 ft_putchar_fd.c
+-rw-r--r--  1 deepthought  deepthought  1189 Sep 13 13:31 ft_putendl_fd.c
+-rw-r--r--  1 deepthought  deepthought  1402 Sep 13 13:31 ft_putnbr_
+fd.c
+-rw-r--r--  1 deepthought  deepthought  1191 Sep 13 13:31 ft_putstr_fd.c
+-rw-r--r--  1 deepthought  deepthought  2468 Sep 13 13:31 ft_split.c
+-rw-r--r--  1 deepthought  deepthought  1619 Sep 13 13:31 ft_strchr.c
+-rw-r--r--  1 deepthought  deepthought  1543 Sep 13 13:31 ft_strdup.c
+-rw-r--r--  1 deepthought  deepthought  1351 Sep 13 13:31 ft_striteri.c
+-rw-r--r--  1 deepthought  deepthought  1508 Sep 13 13:31 ft_strjoin.c
+-rw-r--r--  1 deepthought  deepthought  2401 Sep 13 13:31 ft_strlcat.c
+-rw-r--r--  1 deepthought  deepthought  1618 Sep 13 13:31 ft_strlcpy.c
+-rw-r--r--  1 deepthought  deepthought  1309 Sep 13 13:31 ft_strlen.c
+-rw-r--r--  1 deepthought  deepthought  1576 Sep 13 13:31 ft_strmapi.c
+-rw-r--r--  1 deepthought  deepthought  1676 Sep 13 13:31 ft_strncmp.c
+-rw-r--r--  1 deepthought  deepthought  1821 Sep 13 13:31 ft_strnstr.c
+-rw-r--r--  1 deepthought  deepthought  1575 Sep 13 13:31 ft_strrchr.c
+-rw-r--r--  1 deepthought  deepthought  1841 Sep 13 13:31 ft_strtrim.c
+-rw-r--r--  1 deepthought 
+deepthought  1846 Sep 13 13:31 ft_substr.c
+-rw-r--r--  1 deepthought  deepthought  1463 Sep 13 13:31 ft_tolower.c
+-rw-r--r--  1 deepthought  deepthought  1462 Sep 13 13:31 ft_toupper.c
+-rw-r--r--  1 deepthought  deepthought  3066 Sep 13 13:31 libft.h
+
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalpha.c -o ft_isalpha.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isdigit.c -o ft_isdigit.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalnum.c -o ft_isalnum.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isascii.c -o ft_isascii.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isprint.c -o ft_isprint.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_toupper.c -o ft_toupper.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_tolower.c -o ft_tolower.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memset.c -o ft_memset.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_bzero.c -o ft_bzero.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcpy.c -o ft_memcpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memccpy.c -o ft_memccpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memmove.c -o ft_memmove.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memchr.c -o ft_memchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcmp.c -o ft_memcmp.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlen.c -o ft_strlen.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcpy.c -o ft_strlcpy.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcat.c -o ft_strlcat.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strchr.c -o ft_strchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strrchr.c -o ft_strrchr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strncmp.c -o ft_strncmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strnstr.c -o ft_strnstr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_atoi.c -o ft_atoi.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_calloc.c -o ft_calloc.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strdup.c -o ft_strdup.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_substr.c -o ft_substr.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strjoin.c -o ft_strjoin.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strtrim.c -o ft_strtrim.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_split.c -o ft_split.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_itoa.c -o ft_itoa.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strmapi.c -o ft_strmapi.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_striteri.c -o ft_striteri.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putchar_fd.c -o ft_putchar_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putstr_fd.c -o ft_putstr_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putendl_fd.c -o ft_putendl_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstnew_bonus.c -o ft_lstnew_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstadd_front_bonus.c -o ft_lstadd_front_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstsize_bonus.c -o ft_lstsize_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstlast_bonus.c -o ft_lstlast_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstadd_back_bonus.c -o ft_lstadd_back_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstdelone_bonus.c -o ft_lstdelone_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstclear_bonus.c -o ft_lstclear_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstiter_bonus.c -o ft_lstiter_bonus.o
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstmap_bonus.c -o ft_lstmap_bonus.o
+
+ar rc libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew_bonus.o ft_lstadd_front_bonus.o ft_lstsize_bonus.o ft_lstlast_bonus.o ft_lstadd_back_bonus.o ft_lstdelone_bonus.o ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o
+
+
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalpha.c -o ft_isalpha.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isdigit.c -o ft_isdigit.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isalnum.c -o ft_isalnum.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isascii.c -o ft_isascii.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_isprint.c -o ft_isprint.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_toupper.c -o ft_toupper.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_tolower.c -o ft_tolower.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memset.c -o ft_memset.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_bzero.c -o ft_bzero.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcpy.c -o ft_memcpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memccpy.c -o ft_memccpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memmove.c -o ft_memmove.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memchr.c -o ft_memchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_memcmp.c -o ft_memcmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlen.c -o ft_strlen.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcpy.c -o ft_strlcpy.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strlcat.c -o ft_strlcat.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strchr.c -o ft_strchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strrchr.c -o ft_strrchr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strncmp.c -o ft_strncmp.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strnstr.c -o ft_strnstr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_atoi.c -o ft_atoi.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_calloc.c -o ft_calloc.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strdup.c -o ft_strdup.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_substr.c -o ft_substr.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strjoin.c -o ft_strjoin.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strtrim.c -o ft_strtrim.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_split.c -o ft_split.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_itoa.c -o ft_itoa.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_strmapi.c -o ft_strmapi.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_striteri.c -o ft_striteri.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstnew_bonus.c -o ft_lstnew_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstadd_front_bonus.c -o ft_lstadd_front_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstsize_bonus.c -o ft_lstsize_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstlast_bonus.c -o ft_lstlast_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstadd_back_bonus.c -o ft_lstadd_back_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstdelone_bonus.c -o ft_lstdelone_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstclear_bonus.c -o ft_lstclear_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstiter_bonus.c -o ft_lstiter_bonus.o
+gcc -Wall -Wextra -Werror -Ilibft.h -c ft_lstmap_bonus.c -o ft_lstmap_bonus.o
+ar rc libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_strlcpy.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew_bonus.o ft_lstadd_front_bonus.o ft_lstsize_bonus.o ft_lstlast_bonus.o ft_lstadd_back_bonus.o ft_lstdelone_bonus.o ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o
+
+total 144
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1976 Sep 13 13:31 test_ft_lstadd_back.c
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14148 Sep 13 13:31 test_lib
+
+
+Testing ft_lstadd_back
+ [*] ft_lstadd_back : [OK]
+
+
+Testing ft_lstadd_back
+ [*] ft_lstadd_back : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1890 Sep 13 13:31 test_ft_lstadd_front.c
+-rwxr-xr-x  1 deepthought  deepthought  14148 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14100 Sep 13 13:31 test_lib
+
+
+Testing ft_lstadd_front
+ [*] ft_lstadd_front : [OK]
+
+
+Testing ft_lstadd_front
+ [*] ft_lstadd_front : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1911 Sep 13 13:31 test_ft_lstclear.c
+-rwxr-xr-x  1 deepthought  deepthought  14100 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14104 Sep 13 13:31 test_lib
+
+
+Testing ft_lstclear
+ [*] ft_lstclear : [OK]
+
+
+Testing ft_lstclear
+ [*] ft_lstclear : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1971 Sep 13 13:31 test_ft_lstdelone.c
+-rwxr-xr-x  1 deepthought  deepthought  14104 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14032 Sep 13 13:31 test_lib
+
+
+Testing ft_lstdelone
+ [*] ft_lstdelone : [OK]
+
+
+Testing ft_lstdelone
+ [*] ft_lstdelone : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1510 Sep 13 13:31 test_ft_lstiter.c
+-rwxr-xr-x  1 deepthought  deepthought  14032 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14064 Sep 13 13:31 test_lib
+
+
+Testing ft_lstiter
+ [*] ft_lstiter : [OK]
+
+
+Testing ft_lstiter
+ [*] ft_lstiter : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1370 Sep 13 13:31 test_ft_lstlast.c
+-rwxr-xr-x  1 deepthought  deepthought  14064 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13960 Sep 13 13:31 test_lib
+
+
+Testing ft_lstlast
+ [*] ft_lstlast : [OK]
+
+
+Testing ft_lstlast
+ [*] ft_lstlast : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1588 Sep 13 13:31 test_ft_lstmap.c
+-rwxr-xr-x  1 deepthought  deepthought  13960 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  14256 Sep 13 13:31 test_lib
+
+
+Testing ft_lstmap
+ [*] ft_lstmap : [OK]
+
+
+Testing ft_lstmap
+ [*] ft_lstmap : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1763 Sep 13 13:31 test_ft_lstnew.c
+-rwxr-xr-x  1 deepthought  deepthought  14256 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13992 Sep 13 13:31 test_lib
+
+
+Testing ft_lstnew
+ [*] ft_lstnew : [OK]
+
+
+Testing ft_lstnew
+ [*] ft_lstnew : [OK]
+
+total 176
+-rw-r--r--  1 deepthought  deepthought    965 Sep 13 13:31 Makefile
+-rw-r--r--  1 deepthought  deepthought  43112 Sep 13 13:31 libft.a
+-rw-r--r--  1 deepthought  deepthought   3066 Sep 13 13:31 libft.h
+-rw-r--r--  1 deepthought  deepthought   2734 Sep 13 13:31 malloc.c
+-rw-r--r--  1 deepthought  deepthought   2157 Sep 13 13:31 our_utils.c
+-rw-r--r--  1 deepthought  deepthought   1365 Sep 13 13:31 test_ft_lstsize.c
+-rwxr-xr-x  1 deepthought  deepthought  13992 Sep 13 13:31 test_lib
+-rw-r--r--  1 deepthought  deepthought   1503 Sep 13 13:31 tests.h
+-rw-r--r--  1 deepthought  deepthought   1342 Sep 13 13:31 true_allocations.c
+
+
+
+total 32
+-rwxr-xr-x  1 deepthought  deepthought  13960 Sep 13 13:31 test_lib
+
+
+Testing ft_lstsize
+ [*] ft_lstsize : [OK]
+
+
+Testing ft_lstsize
+ [*] ft_lstsize : [OK]
+
+RESULTS:
+ [*] ft_lstadd_back.c: [OK]
+ [*] ft_lstadd_front.c: [OK]
+ [*] ft_lstclear.c: [OK]
+ [*] ft_lstdelone.c: [OK]
+ [*] ft_lstiter.c: [OK]
+ [*] ft_lstlast.c: [OK]
+ [*] ft_lstmap.c: [OK]
+ [*] ft_lstnew.c: [OK]
+ [*] ft_lstsize.c: [OK]
+
+9/9 functions correct
+Grade: 25
+
+= Final grade: 125 =============================================================
