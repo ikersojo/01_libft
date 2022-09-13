@@ -23,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*first_item;
 	t_list	*temp;
 
-	if (f == NULL || del == NULL || lst == NULL)
+	if (f == NULL || lst == NULL)
 		return (NULL);
 	first_item = ft_lstnew(f(lst->content));
 	if (first_item == NULL)
